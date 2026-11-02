@@ -28,7 +28,7 @@
 | AS2-W MuJoCo XML | ✅ 已入库 | `models/as2_w/as2_w.xml` |
 | R1-A7 MuJoCo XML | ✅ 已入库 | `models/r1_a7/r1_a7.xml` |
 | 半人马整机 XML | ✅ 已入库 | `models/centaur/centaur.xml` |
-| 模型网格与原始 URDF | ⚠️ 尚未公开上传 | 需从原始 ZIP 本地导入 |
+| 模型网格与原始 URDF | ⚠️ 尚未公开上传 | 请从宇树官方文档下载 |
 | PD 控制基础代码 | 🧪 初始实现 | 尚未完成整机动态验证 |
 | 全身逆运动学 QP、WBC、MPC、PPO | 📋 规划中 | 不代表已实现 |
 | 移动、转向、跳跃与移动操作实测 | ⏳ 待验证 | 当前没有可复现的整机性能结论 |
