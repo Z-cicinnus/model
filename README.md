@@ -1,5 +1,7 @@
 # Centaur Robot — MuJoCo Whole-Body Simulation
 
+[中文说明 · Chinese README](README.zh-CN.md)  |  [Jumping-control research roadmap / 跳跃研究规划](README.zh-CN.md#跳跃控制研究规划)
+
 This is the research repository for **AS2-W four wheel-legged base + R1-A7 humanoid upper body**, modeled as one floating-base multibody robot. File and directory names use English snake_case.
 
 **Current status (2026-11-02):** Original XML descriptions have been imported from previously shared project assets, including the combined centaur XML (1 floating base, 55 referenced meshes). Mesh binaries and source URDFs are **not present in this public repository**; they must be restored locally from the supplied source archives. The assembled robot **cannot compile until those files are installed**. No whole-body locomotion/control results are claimed.
