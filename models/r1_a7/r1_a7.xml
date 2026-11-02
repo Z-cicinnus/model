@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="R1_A7_upper_body">
+  <compiler angle="radian" meshdir="meshes" inertiafromgeom="false" fusestatic="false" autolimits="true" balanceinertia="false" boundmass="0" boundinertia="0" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" />
+  <size nuser_jnt="1" />
+  <visual>
+    <global offwidth="1920" offheight="1080" />
+  </visual>
+  <asset>
+    <material name="r1a7_silvery" rgba="0.79216 0.81961 0.93333 1" />
+    <material name="r1a7_dark_gray" rgba="0.416 0.427 0.455 1" />
+    <mesh name="r1a7_camera_link_mesh" file="camera_link.STL" />
+    <mesh name="r1a7_head_pitch_link_mesh" file="head_pitch_link.STL" />
+    <mesh name="r1a7_head_yaw_link_mesh" file="head_yaw_link.STL" />
+    <mesh name="r1a7_left_elbow_link_mesh" file="left_elbow_link.STL" />
+    <mesh name="r1a7_left_shoulder_pitch_link_mesh" file="left_shoulder_pitch_link.STL" />
+    <mesh name="r1a7_left_shoulder_roll_link_mesh" file="left_shoulder_roll_link.STL" />
+    <mesh name="r1a7_left_shoulder_yaw_link_mesh" file="left_shoulder_yaw_link.STL" />
+    <mesh name="r1a7_left_wrist_pitch_link_mesh" file="left_wrist_pitch_link.STL" />
+    <mesh name="r1a7_left_wrist_roll_link_mesh" file="left_wrist_roll_link.STL" />
+    <mesh name="r1a7_left_wrist_yaw_link_mesh" file="left_wrist_yaw_link.STL" />
+    <mesh name="r1a7_pelvis_link_mesh" file="pelvis_link.STL" />
+    <mesh name="r1a7_right_elbow_link_mesh" file="right_elbow_link.STL" />
+    <mesh name="r1a7_right_shoulder_pitch_link_mesh" file="right_shoulder_pitch_link.STL" />
+    <mesh name="r1a7_right_shoulder_roll_link_mesh" file="right_shoulder_roll_link.STL" />
+    <mesh name="r1a7_right_shoulder_yaw_link_mesh" file="right_shoulder_yaw_link.STL" />
+    <mesh name="r1a7_right_wrist_pitch_link_mesh" file="right_wrist_pitch_link.STL" />
+    <mesh name="r1a7_right_wrist_roll_link_mesh" file="right_wrist_roll_link.STL" />
+    <mesh name="r1a7_right_wrist_yaw_link_mesh" file="right_wrist_yaw_link.STL" />
+    <mesh name="r1a7_waist_yaw_link_mesh" file="waist_yaw_link.STL" />
+  </asset>
+  <worldbody>
+    <body name="r1a7_pelvis_link">
+      <inertial pos="0 0 -0.01908191" mass="0.44340496" fullinertia="0.00073466 0.00073466 0.00142699 0 0 0" />
+      <geom name="r1a7_pelvis_link_visual0" type="mesh" mesh="r1a7_pelvis_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+      <geom name="r1a7_pelvis_link_collision0" type="mesh" mesh="r1a7_pelvis_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+      <site name="r1a7_mount" pos="0 0 0" size="0.006" rgba="1 0 0 1" />
+      <body name="r1a7_waist_yaw_link" pos="0 0 0" quat="1 0 0 0">
+        <joint name="r1a7_waist_yaw_joint" type="hinge" axis="0 0 1" range="-2.618 2.618" limited="true" user="18.7" damping="0" frictionloss="0" armature="0" />
+        <inertial pos="-0.000648 -5.2e-05 0.144497" mass="6.384198" fullinertia="0.060949 0.050645 0.024602 -6e-05 0.001044 -0.000164" />
+        <geom name="r1a7_waist_yaw_link_visual0" type="mesh" mesh="r1a7_waist_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+        <geom name="r1a7_waist_yaw_link_collision0" type="mesh" mesh="r1a7_waist_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+        <body name="r1a7_left_shoulder_pitch_link" pos="0 0.085688 0.19749" quat="0.9914402523850325 0.1305611961905343 0 0">
+          <joint name="r1a7_left_shoulder_pitch_joint" type="hinge" axis="0 1 0" range="-3.1416 2.0944" limited="true" user="18.7" damping="0" frictionloss="0" armature="0" />
+          <inertial pos="0.00294386 0.04476868 -0.02286868" mass="0.83794992" fullinertia="0.0006607199999999999 0.0006017 0.00057741 -4.92e-06 1.58e-05 5.557e-05" />
+          <geom name="r1a7_left_shoulder_pitch_link_visual0" type="mesh" mesh="r1a7_left_shoulder_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_dark_gray" />
+          <geom name="r1a7_left_shoulder_pitch_link_collision0" type="mesh" mesh="r1a7_left_shoulder_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+          <body name="r1a7_left_shoulder_roll_link" pos="0.03445 0.047132 -0.025693" quat="0.9914402523850325 -0.1305611961905343 0 0">
+            <joint name="r1a7_left_shoulder_roll_joint" type="hinge" axis="1 0 0" range="-0.22689 2.4784" limited="true" user="18.7" damping="0" frictionloss="0" armature="0" />
+            <inertial pos="-0.037828 0.003967 -0.066496" mass="0.740212" fullinertia="0.000971 0.001089 0.0005730000000000001 -4e-06 0.000101 2.2e-05" />
+            <geom name="r1a7_left_shoulder_roll_link_visual0" type="mesh" mesh="r1a7_left_shoulder_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+            <geom name="r1a7_left_shoulder_roll_link_collision0" type="mesh" mesh="r1a7_left_shoulder_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+            <body name="r1a7_left_shoulder_yaw_link" pos="-0.03445 0.0043 -0.10835" quat="1 0 0 0">
+              <joint name="r1a7_left_shoulder_yaw_joint" type="hinge" axis="0 0 1" range="-1.9199 1.9199" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+              <inertial pos="0.013143 -0.004355 -0.072948" mass="0.738441" fullinertia="0.000829 0.000852 0.000469 1.5e-05 0.000108 -3.5e-05" />
+              <geom name="r1a7_left_shoulder_yaw_link_visual0" type="mesh" mesh="r1a7_left_shoulder_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+              <geom name="r1a7_left_shoulder_yaw_link_collision0" type="mesh" mesh="r1a7_left_shoulder_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+              <body name="r1a7_left_elbow_link" pos="0.016191 0.026461 -0.082858" quat="1 0 0 0">
+                <joint name="r1a7_left_elbow_joint" type="hinge" axis="0 1 0" range="-0.97564 2.1852" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+                <inertial pos="0.072371 -0.024612 -0.011566" mass="0.759419" fullinertia="0.00055 0.000892 0.000936 0.000179 3e-05 -1.7e-05" />
+                <geom name="r1a7_left_elbow_link_visual0" type="mesh" mesh="r1a7_left_elbow_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                <geom name="r1a7_left_elbow_link_collision0" type="mesh" mesh="r1a7_left_elbow_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                <body name="r1a7_left_wrist_roll_link" pos="0.11218 -0.03002 -0.011702" quat="1 0 0 0">
+                  <joint name="r1a7_left_wrist_roll_joint" type="hinge" axis="1 0 0" range="-1.9199 1.9199" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+                  <inertial pos="0.03771439 -0.00122311 -0.0006226200000000001" mass="0.4924082" fullinertia="0.00023179 0.00029325 0.00030986 3.57e-06 2.9e-07 -2e-08" />
+                  <geom name="r1a7_left_wrist_roll_link_visual0" type="mesh" mesh="r1a7_left_wrist_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                  <geom name="r1a7_left_wrist_roll_link_collision0" type="mesh" mesh="r1a7_left_wrist_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                  <body name="r1a7_left_wrist_pitch_link" pos="0.04646 -0.0018006 0.00064554" quat="1 0 0 0">
+                    <joint name="r1a7_left_wrist_pitch_joint" type="hinge" axis="0 1 0" range="-1.6144 1.6144" limited="true" user="37.7" damping="0" frictionloss="0" armature="0" />
+                    <inertial pos="0.04612819 -0 0" mass="0.413215" fullinertia="0.00017063 0.00026511 0.00027294 0 0 0" />
+                    <geom name="r1a7_left_wrist_pitch_link_visual0" type="mesh" mesh="r1a7_left_wrist_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                    <geom name="r1a7_left_wrist_pitch_link_collision0" type="mesh" mesh="r1a7_left_wrist_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                    <body name="r1a7_left_wrist_yaw_link" pos="0.051 0.00013893 0.02225" quat="1 0 0 0">
+                      <joint name="r1a7_left_wrist_yaw_joint" type="hinge" axis="0 0 1" range="-1.6144 1.6144" limited="true" user="37.7" damping="0" frictionloss="0" armature="0" />
+                      <inertial pos="0.02586884 -1.83e-06 -0.02283894" mass="0.08314044" fullinertia="4.675e-05 5.064e-05 3.201e-05 0 -1.1e-07 0" />
+                      <geom name="r1a7_left_wrist_yaw_link_visual0" type="mesh" mesh="r1a7_left_wrist_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                      <geom name="r1a7_left_wrist_yaw_link_collision0" type="mesh" mesh="r1a7_left_wrist_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="r1a7_right_shoulder_pitch_link" pos="0 -0.085688 0.19749" quat="0.9914402523850325 -0.1305611961905343 0 0">
+          <joint name="r1a7_right_shoulder_pitch_joint" type="hinge" axis="0 1 0" range="-3.1416 2.0944" limited="true" user="18.7" damping="0" frictionloss="0" armature="0" />
+          <inertial pos="0.00294386 -0.04476868 -0.02286868" mass="0.83794992" fullinertia="0.0006607199999999999 0.0006017 0.00057741 4.92e-06 1.58e-05 -5.557e-05" />
+          <geom name="r1a7_right_shoulder_pitch_link_visual0" type="mesh" mesh="r1a7_right_shoulder_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_dark_gray" />
+          <geom name="r1a7_right_shoulder_pitch_link_collision0" type="mesh" mesh="r1a7_right_shoulder_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+          <body name="r1a7_right_shoulder_roll_link" pos="0.03445 -0.047132 -0.025693" quat="0.9914402523850325 0.1305611961905343 0 0">
+            <joint name="r1a7_right_shoulder_roll_joint" type="hinge" axis="1 0 0" range="-2.47849 0.2268" limited="true" user="18.7" damping="0" frictionloss="0" armature="0" />
+            <inertial pos="-0.037828 -0.003967 -0.066496" mass="0.740212" fullinertia="0.000971 0.001089 0.0005730000000000001 4e-06 0.000101 -2.2e-05" />
+            <geom name="r1a7_right_shoulder_roll_link_visual0" type="mesh" mesh="r1a7_right_shoulder_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+            <geom name="r1a7_right_shoulder_roll_link_collision0" type="mesh" mesh="r1a7_right_shoulder_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+            <body name="r1a7_right_shoulder_yaw_link" pos="-0.03445 -0.0043 -0.10835" quat="1 0 0 0">
+              <joint name="r1a7_right_shoulder_yaw_joint" type="hinge" axis="0 0 1" range="-1.9199 1.9199" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+              <inertial pos="0.013143 0.004355 -0.072948" mass="0.738441" fullinertia="0.000829 0.000852 0.000469 -1.5e-05 0.000108 3.5e-05" />
+              <geom name="r1a7_right_shoulder_yaw_link_visual0" type="mesh" mesh="r1a7_right_shoulder_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+              <geom name="r1a7_right_shoulder_yaw_link_collision0" type="mesh" mesh="r1a7_right_shoulder_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+              <body name="r1a7_right_elbow_link" pos="0.016191 -0.026461 -0.082858" quat="1 0 0 0">
+                <joint name="r1a7_right_elbow_joint" type="hinge" axis="0 1 0" range="-0.97564 2.1852" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+                <inertial pos="0.072371 0.024612 -0.011566" mass="0.759419" fullinertia="0.00055 0.000892 0.000936 -0.000179 3e-05 1.7e-05" />
+                <geom name="r1a7_right_elbow_link_visual0" type="mesh" mesh="r1a7_right_elbow_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                <geom name="r1a7_right_elbow_link_collision0" type="mesh" mesh="r1a7_right_elbow_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                <body name="r1a7_right_wrist_roll_link" pos="0.11218 0.03002 -0.011702" quat="1 0 0 0">
+                  <joint name="r1a7_right_wrist_roll_joint" type="hinge" axis="1 0 0" range="-1.9199 1.9199" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+                  <inertial pos="0.03771439 0.00122311 -0.0006226200000000001" mass="0.4924082" fullinertia="0.00023179 0.00029325 0.00030986 -3.57e-06 2.9e-07 2e-08" />
+                  <geom name="r1a7_right_wrist_roll_link_visual0" type="mesh" mesh="r1a7_right_wrist_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                  <geom name="r1a7_right_wrist_roll_link_collision0" type="mesh" mesh="r1a7_right_wrist_roll_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                  <body name="r1a7_right_wrist_pitch_link" pos="0.04646 0.0018084 -0.00062321" quat="1 0 0 0">
+                    <joint name="r1a7_right_wrist_pitch_joint" type="hinge" axis="0 1 0" range="-1.6144 1.6144" limited="true" user="37.7" damping="0" frictionloss="0" armature="0" />
+                    <inertial pos="0.04612819 0 0" mass="0.413215" fullinertia="0.00017063 0.00026511 0.00027294 0 0 0" />
+                    <geom name="r1a7_right_wrist_pitch_link_visual0" type="mesh" mesh="r1a7_right_wrist_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                    <geom name="r1a7_right_wrist_pitch_link_collision0" type="mesh" mesh="r1a7_right_wrist_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                    <body name="r1a7_right_wrist_yaw_link" pos="0.051235 0.00013294 -0.021703" quat="1 0 0 0">
+                      <joint name="r1a7_right_wrist_yaw_joint" type="hinge" axis="0 0 1" range="-1.6144 1.6144" limited="true" user="37.7" damping="0" frictionloss="0" armature="0" />
+                      <inertial pos="0.02586884 -1.83e-06 0.02283894" mass="0.08314044" fullinertia="4.675e-05 5.064e-05 3.201e-05 0 -1.1e-07 0" />
+                      <geom name="r1a7_right_wrist_yaw_link_visual0" type="mesh" mesh="r1a7_right_wrist_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+                      <geom name="r1a7_right_wrist_yaw_link_collision0" type="mesh" mesh="r1a7_right_wrist_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="r1a7_head_pitch_link" pos="-0.006 0.03155 0.255" quat="1 0 0 0">
+          <joint name="r1a7_head_pitch_joint" type="hinge" axis="0 1 0" range="-0.62832 0.62832" limited="true" user="33.4" damping="0" frictionloss="0" armature="0" />
+          <inertial pos="-6.956e-05 -0.03077972 0.08058588999999999" mass="0.50391253" fullinertia="0.00095995 0.00091344 0.00045356 -4.5e-07 6.24e-06 5.88e-06" />
+          <geom name="r1a7_head_pitch_link_visual0" type="mesh" mesh="r1a7_head_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+          <geom name="r1a7_head_pitch_link_collision0" type="mesh" mesh="r1a7_head_pitch_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+          <body name="r1a7_head_yaw_link" pos="0.0010126 -0.03155 0.1165" quat="1 0 0 0">
+            <joint name="r1a7_head_yaw_joint" type="hinge" axis="0 0 1" range="-2.0071 2.0071" limited="true" user="11" damping="0" frictionloss="0" armature="0" />
+            <inertial pos="0.02211657 -4.725e-05 0.00199411" mass="0.71432240" fullinertia="0.00168182 0.00202452 0.00181448 1e-07 0.00029553 1e-07" />
+            <geom name="r1a7_head_yaw_link_visual0" type="mesh" mesh="r1a7_head_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+            <geom name="r1a7_head_yaw_link_collision0" type="mesh" mesh="r1a7_head_yaw_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+            <body name="r1a7_camera_link" pos="0.066971 0 -0.021637" quat="0.9848073927247509 0 0.173650220946241 0">
+              <inertial pos="0.0118 0 0" mass="0.024" fullinertia="1.5086e-08 7.7482e-09 7.7482e-09 0 0 0" />
+              <geom name="r1a7_camera_link_visual0" type="mesh" mesh="r1a7_camera_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="0" conaffinity="0" group="2" mass="0" material="r1a7_silvery" />
+              <geom name="r1a7_camera_link_collision0" type="mesh" mesh="r1a7_camera_link_mesh" pos="0 0 0" quat="1 0 0 0" contype="1" conaffinity="2" group="3" rgba="0.5 0.6 0.7 0" mass="0" />
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="r1a7_waist_yaw_joint_motor" joint="r1a7_waist_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-60 60" forcelimited="true" forcerange="-60 60" />
+    <motor name="r1a7_left_shoulder_pitch_joint_motor" joint="r1a7_left_shoulder_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-60 60" forcelimited="true" forcerange="-60 60" />
+    <motor name="r1a7_left_shoulder_roll_joint_motor" joint="r1a7_left_shoulder_roll_joint" gear="1" ctrllimited="true" ctrlrange="-60 60" forcelimited="true" forcerange="-60 60" />
+    <motor name="r1a7_left_shoulder_yaw_joint_motor" joint="r1a7_left_shoulder_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_left_elbow_joint_motor" joint="r1a7_left_elbow_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_left_wrist_roll_joint_motor" joint="r1a7_left_wrist_roll_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_left_wrist_pitch_joint_motor" joint="r1a7_left_wrist_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-10 10" forcelimited="true" forcerange="-10 10" />
+    <motor name="r1a7_left_wrist_yaw_joint_motor" joint="r1a7_left_wrist_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-10 10" forcelimited="true" forcerange="-10 10" />
+    <motor name="r1a7_right_shoulder_pitch_joint_motor" joint="r1a7_right_shoulder_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-60 60" forcelimited="true" forcerange="-60 60" />
+    <motor name="r1a7_right_shoulder_roll_joint_motor" joint="r1a7_right_shoulder_roll_joint" gear="1" ctrllimited="true" ctrlrange="-60 60" forcelimited="true" forcerange="-60 60" />
+    <motor name="r1a7_right_shoulder_yaw_joint_motor" joint="r1a7_right_shoulder_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_right_elbow_joint_motor" joint="r1a7_right_elbow_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_right_wrist_roll_joint_motor" joint="r1a7_right_wrist_roll_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_right_wrist_pitch_joint_motor" joint="r1a7_right_wrist_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-10 10" forcelimited="true" forcerange="-10 10" />
+    <motor name="r1a7_right_wrist_yaw_joint_motor" joint="r1a7_right_wrist_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-10 10" forcelimited="true" forcerange="-10 10" />
+    <motor name="r1a7_head_pitch_joint_motor" joint="r1a7_head_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-33 33" forcelimited="true" forcerange="-33 33" />
+    <motor name="r1a7_head_yaw_joint_motor" joint="r1a7_head_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-0.86 0.86" forcelimited="true" forcerange="-0.86 0.86" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,7 @@
+*.stl binary
+*.STL binary
+*.xml text eol=lf
+*.urdf text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
