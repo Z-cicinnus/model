@@ -1,39 +1,141 @@
-# Centaur Robot — MuJoCo Whole-Body Simulation
+# 四轮足半人马机器人 | Centaur Robot
 
-[中文说明 · Chinese README](README.zh-CN.md)  |  [Jumping-control research roadmap / 跳跃研究规划](README.zh-CN.md#跳跃控制研究规划)
+**AS2-W 四轮足底盘 + R1-A7 人形上部机构的统一 MuJoCo 建模与全身控制研究**
 
-This is the research repository for **AS2-W four wheel-legged base + R1-A7 humanoid upper body**, modeled as one floating-base multibody robot. File and directory names use English snake_case.
+[English README](README.en.md) · [整机模型](models/centaur/centaur.xml) · [模型来源](docs/asset_provenance.md) · [验证计划](docs/validation_plan.md)
 
-**Current status (2026-11-02):** Original XML descriptions have been imported from previously shared project assets, including the combined centaur XML (1 floating base, 55 referenced meshes). Mesh binaries and source URDFs are **not present in this public repository**; they must be restored locally from the supplied source archives. The assembled robot **cannot compile until those files are installed**. No whole-body locomotion/control results are claimed.
+## 1. 项目简介
 
-## Quick start
+本项目面向家庭服务场景，将 AS2-W 四轮足底盘与 R1-A7 人形上部机构集成为**同一个浮动基多体动力学系统**，研究整机的稳定移动、转向、姿态控制及双臂协同移动操作。
 
-1. Install Python 3.10+ and run `python -m pip install -e ".[dev]"`.
-2. Restore geometry from your original `AS2W_control_project.zip` and `R1_A7_MuJoCo.zip`:
-   ```bash
-   python scripts/import_assets.py --as2w-zip /path/to/AS2W_control_project.zip --r1a7-zip /path/to/R1_A7_MuJoCo.zip
-   ```
-   The asset importer preserves source STL bytes and names, and copies the original URDF files.
-3. Check asset completeness: `python scripts/check_repo.py --strict`.
-4. Inspect the integrated model: `python scripts/inspect_model.py --model models/centaur/centaur.xml`.
-5. Run a short **uncontrolled** physics smoke test: `python scripts/run_simulation.py --model models/centaur/centaur.xml --steps 500`.
-6. Run `python -m pytest -q`. A pass without model assets means only repository-level tests were run.
+**核心原则：** 底盘、躯干和双臂统一建模、统一评价。可按照规划、感知和控制频率分层组织算法，但不将底盘控制和双臂控制视为互不关联的两个动力学系统。后续不同控制算法应尽量共享同一整机模型、实验任务及评价指标。
 
-## Repository layout
+## 2. 当前工程状态
 
-- `models/as2_w/`: AS2-W MJCF + local URDF/STL (after import).
-- `models/r1_a7/`: R1-A7 MJCF + local URDF/STL (after import).
-- `models/centaur/centaur.xml`: unified whole-body model, referencing the two source mesh directories.
-- `src/centaur_sim/`: shared model/controller interfaces, direct-motor PD baseline.
-- `scripts/`: asset import, validation, inspection and run entrypoints.
-- `configs/`: controller and experiment configuration placeholders.
-- `tests/`: repo/XML structure tests, optional runtime model tests.
-- `docs/`: source provenance, assumptions, limits and next milestones.
+| 模块 | 状态 | 说明 |
+| --- | --- | --- |
+| AS2-W 模型 | 已入库 | `models/as2_w/as2_w.xml` |
+| R1-A7 模型 | 已入库 | `models/r1_a7/r1_a7.xml` |
+| 四轮足半人马整机模型 | 已入库、待复核 | `models/centaur/centaur.xml` |
+| STL 网格及原始 URDF | 尚未公开入库 | 通过原始工程 ZIP 在本地恢复 |
+| 模型检查与仿真入口 | 初步提供 | `scripts/` |
+| 关节 PD 基线及统一控制接口 | 初步实现 | `src/centaur_sim/` |
+| 全身逆运动学 QP、WBC、MPC、PPO | 计划实现 | 尚无可复现的整机控制结论 |
+| 稳定直行、原地转向、双臂操作实验 | 待验证 | 需先完成网格恢复、模型编译和参数校核 |
 
-## Scientific scope and limitations
+当前整机 XML 描述包括 **1 个浮动基座、33 个执行器**，并引用 **55 个 STL 网格**（AS2-W：36 个；R1-A7：19 个）。这些是模型描述中的数量，不等于已完成动力学或硬件验证。
 
-The integrated MJCF is a **pre-existing model artifact**, not a newly validated physical robot. Previously generated AS2-W driving/turning results were for a *collision-simplified AS2-W-only proxy* and do **not** establish centaur locomotion stability. R1-A7 upper-body conversion was verified in its prior standalone project but hardware parameter accuracy and collision safety remain open. This repository starts with descriptive source files, safety-conscious checks, and baseline interfaces; WBIK, QP/WBC, MPC and PPO are planned, not implemented.
+> **注意：** 目前公开仓库没有原始 STL/URDF 文件。仅克隆仓库无法直接运行完整的 MuJoCo 整机模型。模型结构测试通过，也不意味着机器人已实现稳定移动、转向或抓取。
 
-For model data origin and publication concerns see [docs/asset_provenance.md](docs/asset_provenance.md) and [docs/validation_plan.md](docs/validation_plan.md).
+## 3. 仓库目录
 
-**重要说明：** 模型 XML 已上传，但 STL/URDF 资产需要从用户已有压缩包导入后才能正常加载整机模型。不要把仓库结构测试通过误解为整机运动控制通过。
+```text
+model/
+├── README.md                     # 中文项目说明（默认首页）
+├── README.zh-CN.md               # 中文说明副本
+├── README.en.md                  # English README
+├── pyproject.toml                # Python 工程依赖
+├── models/
+│   ├── as2_w/
+│   │   ├── as2_w.xml             # AS2-W MuJoCo 模型
+│   │   └── meshes/               # 本地恢复 36 个 STL，不上传
+│   ├── r1_a7/
+│   │   ├── r1_a7.xml             # R1-A7 MuJoCo 模型
+│   │   └── meshes/               # 本地恢复 19 个 STL，不上传
+│   └── centaur/
+│       └── centaur.xml           # 统一整机模型入口
+├── src/centaur_sim/
+│   ├── interfaces.py             # 统一整机任务命令接口
+│   ├── model.py                  # MuJoCo 模型加载
+│   └── controllers/
+│       └── pd.py                 # 直接力矩电机关节 PD 基线
+├── scripts/
+│   ├── import_assets.py          # 导入本地模型资源
+│   ├── check_repo.py             # 检查 XML 和网格引用
+│   ├── inspect_model.py          # 查看自由度和执行器
+│   └── run_simulation.py         # 零控制输入仿真检查
+├── configs/                      # 机器人及控制器参数
+├── scenes/                       # 后续实验场景
+├── tests/                        # 结构及可选运行时测试
+├── experiments/results/          # 实验输出（默认忽略提交）
+├── docs/                         # 模型来源、命名和验证方案
+└── .github/workflows/            # GitHub Actions 自动检查
+```
+
+新文件统一采用小写英文、下划线命名；原模型关节名与 STL 文件名在引用关系完成核对前不随意更改。
+
+## 4. 安装与运行
+
+建议使用 Python 3.10 或更高版本。首先克隆仓库并安装开发依赖：
+
+```bash
+git clone https://github.com/Z-cicinnus/model.git
+cd model
+python -m pip install -e ".[dev]"
+```
+
+将之前保存的 `AS2W_control_project.zip` 与 `R1_A7_MuJoCo.zip` 放到本地可访问的位置，运行资源导入脚本（将示例路径替换为实际路径）：
+
+```bash
+python scripts/import_assets.py --as2w-zip /path/to/AS2W_control_project.zip --r1a7-zip /path/to/R1_A7_MuJoCo.zip
+```
+
+脚本保留 STL 原始文件名与文件内容，并导入对应的 URDF。随后依次执行：
+
+```bash
+# 检查必需资源；有缺失时返回非零退出码
+python scripts/check_repo.py --strict
+
+# 尝试编译三个 MuJoCo 模型
+python scripts/check_repo.py --strict --compile
+
+# 查看整机自由度、执行器与驱动信息
+python scripts/inspect_model.py --model models/centaur/centaur.xml
+
+# 运行项目基础测试
+python -m pytest -q
+```
+
+如模型能够正常编译，可进行短时零控制输入仿真，用于观察是否出现数值异常：
+
+```bash
+python scripts/run_simulation.py --model models/centaur/centaur.xml --steps 500
+```
+
+**零控制仿真不是站立控制，也不是稳定移动实验。** 若尚未恢复 STL，运行时模型测试可能跳过，请阅读实际测试输出。
+
+## 5. 统一全身控制研究路线
+
+| 阶段 | 研究内容 | 目标成果 |
+| --- | --- | --- |
+| **0：整机建模与校核** | 关节链、安装坐标、质量与惯量、执行器、轮地接触 | 可验证的完整 MuJoCo 模型 |
+| **1：经典全身控制** | PD、整机正逆运动学、全身逆运动学 QP | 全关节控制基线及双臂—车身协调 |
+| **2：优化控制** | 全身逆动力学 QP（WBC）、模型预测控制（MPC） | 满足动力学和接触约束的整机控制 |
+| **3：统一强化学习** | PPO 全身策略及统一观测、动作、奖励 | 轮腿和双臂联合控制 |
+| **4：增强型强化学习** | 历史编码、状态预测、多任务与负载自适应 | 鲁棒性和泛化能力提升 |
+| **5：模型—学习融合** | RL + WBC / MPC、安全约束和动力学投影 | 兼顾精度、适应性与安全的全身控制 |
+| **6：任务驱动控制** | 视觉感知、目标生成、室内导航与移动操作衔接 | 家庭场景自主移动操作 |
+
+以上是**后续研究计划**，并非仓库现有算法的完成清单。各阶段应保持统一的任务接口、基准场景和评价指标，保证对比公平。
+
+## 6. 固定实验任务与评价
+
+初期重点设置四项整机任务：
+
+1. **双臂运动时的机身稳定：** 固定位置进行双臂伸展、回收和末端轨迹跟踪。
+2. **稳定移动与原地转向：** 直行、曲线移动、不同角速度转向，评价姿态、速度跟踪和轮地滑移。
+3. **移动过程中的双臂协同：** 边移动或转向，边完成双臂目标跟踪。
+4. **双臂抓取与负载搬运：** 改变物体质量、位置与质心，分析整机运动稳定性和操作精度。
+
+在基础任务可靠后，再扩展门槛、斜坡、狭窄通道及动态环境中的移动操作。
+
+建议统一记录速度和角速度 RMSE、横滚与俯仰 RMS、左右末端误差、接触力与轮地滑移、关节力矩与能耗、成功率、控制时延及随机种子。详细内容参见 [验证计划](docs/validation_plan.md)。
+
+## 7. 模型来源及使用说明
+
+- AS2-W 与 R1-A7 的 XML 来自之前整理的项目模型；`centaur.xml` 是已有整机描述的英文文件名版本。
+- 模型合并后仍需核查坐标系、整机质心、质量惯量、执行器映射、关节极限、自碰撞与轮地接触。
+- 原始 STL/URDF 暂不在公开仓库分发，需确认原始资源的许可证与再发布权限。
+- 当前控制增益仅用于研究起点，未经实机标定，不可直接作为硬件安全参数。
+
+本仓库的当前重点是：**优先完成整机模型验证和 PD / 全身逆运动学基线，再逐步研究 WBC、MPC、PPO 及模型—学习融合控制。**
