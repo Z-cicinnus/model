@@ -1,0 +1,302 @@
+[
+  {
+    "task": "hold",
+    "seed": 42,
+    "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+    "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+    "benchmark_version": "centaur-benchmark-v1.0",
+    "seconds": 11.999999999998789,
+    "rmse_base_m": 0.0007273597399581088,
+    "rmse_hands_m": [
+      0.0008161451382962168,
+      0.0008128976467973116
+    ],
+    "rmse_base_orientation_deg": 0.029530695438119762,
+    "rmse_hand_orientation_deg": [
+      0.025797685539726577,
+      0.02594755945886236
+    ],
+    "final_errors": [
+      0.0009473838860907728,
+      0.0010384681343512474,
+      0.001036362329415968,
+      0.0005561347680993771,
+      0.0004464950850201462,
+      0.00044634193647051767
+    ],
+    "absolute_joint_mechanical_work_J": 2.213190988749031,
+    "clipped_action_steps": 0,
+    "max_torque_fraction": 0.2385348844940333,
+    "internal_contact_steps": 0,
+    "total_reward": -0.10460565414970663,
+    "checks": {
+      "completed": true,
+      "base_rmse": true,
+      "hands_rmse": true,
+      "base_orientation": true,
+      "hand_orientation": true,
+      "final_base": true,
+      "final_hands": true,
+      "final_base_orientation": true,
+      "no_internal_contacts": true
+    },
+    "success": true,
+    "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+    "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+    "mujoco_version": "3.17.0",
+    "qp_reference_internal_contacts": 0,
+    "qp_max_constraint_residual": 0,
+    "minimum_reference_wheel_load_N": 97.1260853305322,
+    "static_base_residual": 4.440892098500626e-15
+  },
+  {
+    "task": "dual_reach",
+    "seed": 42,
+    "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+    "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+    "benchmark_version": "centaur-benchmark-v1.0",
+    "seconds": 11.999999999998789,
+    "rmse_base_m": 0.0007268722750511036,
+    "rmse_hands_m": [
+      0.0012046659584931622,
+      0.0012043529750561722
+    ],
+    "rmse_base_orientation_deg": 0.030129282007806676,
+    "rmse_hand_orientation_deg": [
+      0.025646278067439538,
+      0.025745153784719206
+    ],
+    "final_errors": [
+      0.0009453266816226464,
+      0.0010571468184779023,
+      0.0010544250090232978,
+      0.0005879276854633494,
+      0.0004529075433046079,
+      0.00045116063013069506
+    ],
+    "absolute_joint_mechanical_work_J": 2.714667515701257,
+    "clipped_action_steps": 0,
+    "max_torque_fraction": 0.2409408626187024,
+    "internal_contact_steps": 0,
+    "total_reward": -0.1719226552570951,
+    "checks": {
+      "completed": true,
+      "base_rmse": true,
+      "hands_rmse": true,
+      "base_orientation": true,
+      "hand_orientation": true,
+      "final_base": true,
+      "final_hands": true,
+      "final_base_orientation": true,
+      "no_internal_contacts": true
+    },
+    "success": true,
+    "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+    "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+    "mujoco_version": "3.17.0",
+    "qp_reference_internal_contacts": 0,
+    "qp_max_constraint_residual": 1.1651041497558528e-13,
+    "minimum_reference_wheel_load_N": 96.13748051443764,
+    "static_base_residual": 5.684341886080802e-14
+  },
+  {
+    "task": "posture_reach",
+    "seed": 42,
+    "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+    "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+    "benchmark_version": "centaur-benchmark-v1.0",
+    "seconds": 11.999999999998789,
+    "rmse_base_m": 0.000837820728918475,
+    "rmse_hands_m": [
+      0.0011862525893116694,
+      0.0011867139376531062
+    ],
+    "rmse_base_orientation_deg": 0.013724968149733984,
+    "rmse_hand_orientation_deg": [
+      0.02972254676407032,
+      0.029916676247816215
+    ],
+    "final_errors": [
+      0.0009874866932783272,
+      0.0009894489030363948,
+      0.0009900450234476236,
+      2.9278402910835558e-05,
+      5.107183611880523e-05,
+      5.056709199578748e-05
+    ],
+    "absolute_joint_mechanical_work_J": 3.6020599573751544,
+    "clipped_action_steps": 0,
+    "max_torque_fraction": 0.23312586283722264,
+    "internal_contact_steps": 0,
+    "total_reward": -0.13622553904539203,
+    "checks": {
+      "completed": true,
+      "base_rmse": true,
+      "hands_rmse": true,
+      "base_orientation": true,
+      "hand_orientation": true,
+      "final_base": true,
+      "final_hands": true,
+      "final_base_orientation": true,
+      "no_internal_contacts": true
+    },
+    "success": true,
+    "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+    "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+    "mujoco_version": "3.17.0",
+    "qp_reference_internal_contacts": 0,
+    "qp_max_constraint_residual": 5.5769579896847574e-12,
+    "minimum_reference_wheel_load_N": 93.36148697259974,
+    "static_base_residual": 5.684341886080802e-14
+  },
+  {
+    "task": "straight_reach",
+    "seed": 42,
+    "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+    "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+    "benchmark_version": "centaur-benchmark-v1.0",
+    "seconds": 11.999999999998789,
+    "rmse_base_m": 0.0012132073329596887,
+    "rmse_hands_m": [
+      0.0017897219247480765,
+      0.0017982857181533364
+    ],
+    "rmse_base_orientation_deg": 0.019359787388512205,
+    "rmse_hand_orientation_deg": [
+      0.26929327277856463,
+      0.26868398414223377
+    ],
+    "final_errors": [
+      0.0010048192166457115,
+      0.001104023895186562,
+      0.0011022427661088522,
+      0.0005503784554046998,
+      0.00045820363869732324,
+      0.00043386754222591407
+    ],
+    "absolute_joint_mechanical_work_J": 7.274965207516677,
+    "clipped_action_steps": 0,
+    "max_torque_fraction": 0.24224543971205506,
+    "internal_contact_steps": 0,
+    "total_reward": -0.3406365588660849,
+    "checks": {
+      "completed": true,
+      "base_rmse": true,
+      "hands_rmse": true,
+      "base_orientation": true,
+      "hand_orientation": true,
+      "final_base": true,
+      "final_hands": true,
+      "final_base_orientation": true,
+      "no_internal_contacts": true
+    },
+    "success": true,
+    "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+    "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+    "mujoco_version": "3.17.0",
+    "qp_reference_internal_contacts": 0,
+    "qp_max_constraint_residual": 2.685547224749484e-11,
+    "minimum_reference_wheel_load_N": 96.04532424816885,
+    "static_base_residual": 5.684341886080802e-14
+  },
+  {
+    "task": "turn_reach",
+    "seed": 42,
+    "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+    "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+    "benchmark_version": "centaur-benchmark-v1.0",
+    "seconds": 11.999999999998789,
+    "rmse_base_m": 0.003275290041657469,
+    "rmse_hands_m": [
+      0.005827812520244525,
+      0.00580727260552069
+    ],
+    "rmse_base_orientation_deg": 0.48990780298676406,
+    "rmse_hand_orientation_deg": [
+      0.5414054049622566,
+      0.5438963958701506
+    ],
+    "final_errors": [
+      0.004305406636326361,
+      0.006925106951608118,
+      0.006307847611286839,
+      0.007998163337634959,
+      0.008541470479986006,
+      0.008422778611266855
+    ],
+    "absolute_joint_mechanical_work_J": 35.495176774874885,
+    "clipped_action_steps": 0,
+    "max_torque_fraction": 0.32832596828860916,
+    "internal_contact_steps": 0,
+    "total_reward": -14.625319234796033,
+    "checks": {
+      "completed": true,
+      "base_rmse": true,
+      "hands_rmse": true,
+      "base_orientation": true,
+      "hand_orientation": true,
+      "final_base": true,
+      "final_hands": true,
+      "final_base_orientation": true,
+      "no_internal_contacts": true
+    },
+    "success": true,
+    "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+    "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+    "mujoco_version": "3.17.0",
+    "qp_reference_internal_contacts": 0,
+    "qp_max_constraint_residual": 1.7318143729529168e-12,
+    "minimum_reference_wheel_load_N": 95.93613871236327,
+    "static_base_residual": 5.684341886080802e-14
+  },
+  {
+    "task": "disturbed_reach",
+    "seed": 42,
+    "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+    "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+    "benchmark_version": "centaur-benchmark-v1.0",
+    "seconds": 11.999999999998789,
+    "rmse_base_m": 0.0010359831785726973,
+    "rmse_hands_m": [
+      0.0017449590436319953,
+      0.0017828163705031642
+    ],
+    "rmse_base_orientation_deg": 0.035767422628698364,
+    "rmse_hand_orientation_deg": [
+      0.44805639246917833,
+      0.4487352720737198
+    ],
+    "final_errors": [
+      0.0009477672958050656,
+      0.0010842464058077128,
+      0.0010786428190742816,
+      0.0006691761366623889,
+      0.0005186742879484271,
+      0.0005174288409873783
+    ],
+    "absolute_joint_mechanical_work_J": 5.04235389353095,
+    "clipped_action_steps": 0,
+    "max_torque_fraction": 0.24288809628691072,
+    "internal_contact_steps": 0,
+    "total_reward": -0.4316148227476754,
+    "checks": {
+      "completed": true,
+      "base_rmse": true,
+      "hands_rmse": true,
+      "base_orientation": true,
+      "hand_orientation": true,
+      "final_base": true,
+      "final_hands": true,
+      "final_base_orientation": true,
+      "no_internal_contacts": true
+    },
+    "success": true,
+    "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+    "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+    "mujoco_version": "3.17.0",
+    "qp_reference_internal_contacts": 0,
+    "qp_max_constraint_residual": 1.1651041497558528e-13,
+    "minimum_reference_wheel_load_N": 96.13748051443764,
+    "static_base_residual": 5.684341886080802e-14
+  }
+]

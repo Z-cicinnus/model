@@ -25,3 +25,9 @@ experiments/results/*
 *.ckpt
 runs/
 logs/
+
+# Locally restored geometry/data from full user-provided model ZIPs
+research/centaur_complete/meshes/
+research/centaur_complete/source/*.urdf
+models/r1_a7_o6/meshes/
+models/r1_a7_o6/hand/meshes/

@@ -1,0 +1,32 @@
+{
+  "case": "coordinated",
+  "seconds": 11.999999999998789,
+  "reference_contact_steps": 0,
+  "qp_equality_residual": 1.4443371834104804e-11,
+  "hand_max_error_m": [
+    0.005658634150167455,
+    0.005734143396890363
+  ],
+  "pitch_tracking_max_deg": 0.14690090247539034,
+  "pitch_range_deg": [
+    -4.544505723006234e-06,
+    1.0481040245321347
+  ],
+  "roll_max_deg": 0.0038517792881739735,
+  "xy_max_m": 0.004934008732329475,
+  "height_error_max_m": 0.0003449052718997314,
+  "internal_contact_steps": 0,
+  "saturated_steps": 0,
+  "max_torque_fraction": 0.2461102635792446,
+  "min_sampled_wheel_load_N": 91.35864295712658,
+  "engine_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "passed": true
+}

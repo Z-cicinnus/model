@@ -150,3 +150,28 @@ python scripts/whole_body_diagnostics.py --model models/centaur/centaur.xml --fu
 ```
 
 第二条命令需要先恢复 STL 并成功编译整机 XML。历史 AS2-W 代理模型的移动结果与 R1-A7 固定基运动学检查，不能当作半人马整机稳定移动验证。
+
+## 9. 最新补充：完整整机控制研究工程及 O6 双手
+
+根据新上传的两个完整压缩包，本仓库新增以下可追溯项目目录：
+
+- [`research/centaur_complete/`](research/centaur_complete/)：保留原包的整机模型、33 执行器映射、站立基线、姿态反馈、离线全身 IK-QP、六项任务基准、自碰撞版本、动力学分析代码及小型结果 JSON/CSV。
+- [`models/r1_a7_o6/`](models/r1_a7_o6/)：R1-A7 搭载双 O6 灵巧手的**独立上部模型**（39 个物理关节，29 个执行器）；**尚未验证其与 AS2-W 合并的整机版本**。
+- [`docs/uploaded_archives_zh.md`](docs/uploaded_archives_zh.md)：归档来源、研究成果边界及完整复现说明。
+
+原始 ZIP 中的网格、NPZ 轨迹与视频需在本地导入，仓库不公开分发来源不明确的二进制资源：
+
+```bash
+python scripts/import_uploaded_archives.py --centaur-zip "/path/to/Centaur_MuJoCo_Complete (2).zip" --o6-zip "/path/to/r1_a7_o6_model(1).zip"
+python scripts/check_uploaded_models.py --strict
+python scripts/check_uploaded_models.py --strict --compile
+```
+
+如需复现归档中的整机任务实验，安装 `configs/requirements_complete.txt` 中依赖，再进入 `research/centaur_complete`，使用：
+
+```bash
+python benchmark/run_tasks.py --task all
+python whole_body_ik/run.py --case all
+```
+
+**完成状态说明：** 归档包含已执行过的站立、动力学分析、离线 IK-QP 和六任务基准记录，但 GitHub 仓库中的二进制网格尚未分发；这些是原压缩包的历史实验输出，**不是本次 GitHub CI 重新运行的控制实验**。当前尚未实现或验证在线全身 WBC、MPC、PPO，也未将 O6 双手与四轮足底盘合成为已验证的整机模型。

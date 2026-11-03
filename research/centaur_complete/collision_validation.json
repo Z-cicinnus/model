@@ -1,0 +1,1786 @@
+{
+  "version": "3.3.7",
+  "unchanged_inertial_joint_actuator_and_mount": true,
+  "home_change": "shoulder roll left +3deg right -3deg; original stored as assembly_reference",
+  "manual_excludes": 15,
+  "home_internal_contacts": [],
+  "ground_contacts_after_0_6mm_lowering": [
+    {
+      "a": "as2w_floor",
+      "b": "as2w_FL_foot_collision_1",
+      "gap_m": -9.999832413820631e-05
+    },
+    {
+      "a": "as2w_floor",
+      "b": "as2w_FR_foot_collision_1",
+      "gap_m": -9.999740739416452e-05
+    },
+    {
+      "a": "as2w_floor",
+      "b": "as2w_RL_foot_collision_1",
+      "gap_m": -0.00010000171361877752
+    },
+    {
+      "a": "as2w_floor",
+      "b": "as2w_RR_foot_collision_1",
+      "gap_m": -9.999770800039887e-05
+    }
+  ],
+  "sampled_poses": 87,
+  "sampled_poses_with_contacts": 24,
+  "sweep": [
+    {
+      "joint": "as2w_FL_hip",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.015425977667772454,
+          "normal_force_N": 502.4292834362521
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.003526673037948408,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.03805476412925423,
+          "normal_force_N": 360.12695009674877
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.00279154319137769,
+          "normal_force_N": 52.41090667414141
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.03978504094564667,
+          "normal_force_N": 128.1310508953929
+        }
+      ]
+    },
+    {
+      "joint": "as2w_FL_thigh",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.029970658092285853,
+          "normal_force_N": 853.680520735878
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.017042570313772664,
+          "normal_force_N": 599.1034491390668
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.023633754086212048,
+          "normal_force_N": 446.41320678958937
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.002947968681462706,
+          "normal_force_N": 342.0384253240088
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.02672817776712578,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_calf_collision_1",
+          "b": "r1a7_left_shoulder_pitch_link_collision0",
+          "gap_m": -0.013987650687875901,
+          "normal_force_N": 1949.9244959110024
+        },
+        {
+          "a": "as2w_FL_calf_collision_1",
+          "b": "r1a7_left_shoulder_roll_link_collision0",
+          "gap_m": -0.05099376035147941,
+          "normal_force_N": 2439.0683505691236
+        }
+      ]
+    },
+    {
+      "joint": "as2w_FR_hip",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.005450384050169682,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.015989277288591185,
+          "normal_force_N": 552.4143965008678
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.013237755066901552,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.0045659554276660805,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.03901273265527869,
+          "normal_force_N": 322.6614868184869
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.015017721066669938,
+          "normal_force_N": 130.38084364161543
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.038208178803054764,
+          "normal_force_N": 125.59813117455958
+        }
+      ]
+    },
+    {
+      "joint": "as2w_FR_thigh",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.03004912438384533,
+          "normal_force_N": 735.7187738689556
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.017486673327721008,
+          "normal_force_N": 407.7533148865734
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.023624880196217706,
+          "normal_force_N": 477.9189962862938
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.024146823940390263,
+          "normal_force_N": 452.5614655849162
+        },
+        {
+          "a": "as2w_FR_calf_collision_1",
+          "b": "r1a7_right_shoulder_pitch_link_collision0",
+          "gap_m": -0.01398663175923086,
+          "normal_force_N": 1975.5493367752188
+        },
+        {
+          "a": "as2w_FR_calf_collision_1",
+          "b": "r1a7_right_shoulder_roll_link_collision0",
+          "gap_m": -0.050993856858387206,
+          "normal_force_N": 2465.0586186859073
+        }
+      ]
+    },
+    {
+      "joint": "as2w_RL_thigh",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex22",
+          "b": "as2w_RL_thigh_collision_1",
+          "gap_m": -0.0012156981448148115,
+          "normal_force_N": 1118.7543708429623
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.04654698983109642,
+          "normal_force_N": 8521.804305801406
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.010153578592207335,
+          "normal_force_N": 9280.938899650771
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex5",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.013247440243957654,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex6",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.006870127533233574,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex7",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.015703515237423336,
+          "normal_force_N": 940.571711404061
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex10",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.014537132594588206,
+          "normal_force_N": 683.5331317505209
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex11",
+          "b": "as2w_RL_calf_collision_1",
+          "gap_m": -0.010550093529108113,
+          "normal_force_N": 0.0
+        }
+      ]
+    },
+    {
+      "joint": "as2w_RR_thigh",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex17",
+          "b": "as2w_RR_thigh_collision_1",
+          "gap_m": -0.001209788749581631,
+          "normal_force_N": 1091.983203840093
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.04654854349874545,
+          "normal_force_N": 8514.73232163109
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.010151031048688959,
+          "normal_force_N": 9271.56463072181
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex3",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.00940411503878438,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex11",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.01450834186290702,
+          "normal_force_N": 688.6376690381276
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex12",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.010119911775737992,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex13",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.015699589466321304,
+          "normal_force_N": 937.7146251048966
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex14",
+          "b": "as2w_RR_calf_collision_1",
+          "gap_m": -0.01324504715869298,
+          "normal_force_N": 0.0
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_waist_yaw_joint",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex1",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex6",
+          "gap_m": -4.0309622594304667e-05,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex5",
+          "gap_m": -0.01837959433694257,
+          "normal_force_N": 10693.66878683881
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex6",
+          "gap_m": -0.01169003929542763,
+          "normal_force_N": 5016.055347076493
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex10",
+          "gap_m": -0.01856904418446726,
+          "normal_force_N": 10805.807994128363
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.0114767608880853,
+          "normal_force_N": 6636.703372663885
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex14",
+          "gap_m": -0.017789682226024305,
+          "normal_force_N": 9659.16713134251
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "gap_m": -0.005555603711469729,
+          "normal_force_N": 4265.522453554554
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex20",
+          "gap_m": -0.006208048208977071,
+          "normal_force_N": 1726.080918179152
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex23",
+          "gap_m": -0.005122535342638025,
+          "normal_force_N": 1245.0887245825857
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex5",
+          "gap_m": -0.007471770921367586,
+          "normal_force_N": 8177.293063433642
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.011919081544245274,
+          "normal_force_N": 3654.3344152426525
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex14",
+          "gap_m": -0.005066934758983877,
+          "normal_force_N": 306.4759709483659
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "gap_m": -0.02086198865362612,
+          "normal_force_N": 10269.975474133547
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex19",
+          "gap_m": -0.0015310642641999787,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex22",
+          "gap_m": -0.019976994237451542,
+          "normal_force_N": 13314.357300508886
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex6",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "gap_m": -0.0030219548838739947,
+          "normal_force_N": 1639.9802015541497
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex6",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex22",
+          "gap_m": -0.00899227883668927,
+          "normal_force_N": 5263.460709730578
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.005718923846402811,
+          "normal_force_N": 861.5858497418045
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex6",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.005029896150155478,
+          "normal_force_N": 611.7511909269564
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "gap_m": -0.019754965631582803,
+          "normal_force_N": 11301.320424787376
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.0018456792863574087,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex20",
+          "gap_m": -0.007971753976066056,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.018823204760729313,
+          "normal_force_N": 3742.6059646843833
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_waist_yaw_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.007998500184600464,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex14",
+          "gap_m": -0.0016212446626995415,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "gap_m": -0.014886013546441776,
+          "normal_force_N": 554.66325576553
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_left_shoulder_yaw_link_collision0_convex22",
+          "gap_m": -0.01985212517485854,
+          "normal_force_N": 9344.263919201816
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex3",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.018853718018052735,
+          "normal_force_N": 2729.251280859922
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex1",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex19",
+          "gap_m": -2.894399149881903e-05,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "gap_m": -0.004293496654715089,
+          "normal_force_N": 2609.743282084388
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.017656762498726566,
+          "normal_force_N": 11224.301972730611
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex16",
+          "gap_m": -0.011405658019179957,
+          "normal_force_N": 5064.626756626935
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex17",
+          "gap_m": -0.0002123168392043525,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex19",
+          "gap_m": -0.018195632396745636,
+          "normal_force_N": 9714.073968400347
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex20",
+          "gap_m": -0.010629598973080873,
+          "normal_force_N": 5800.0837563405175
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex21",
+          "gap_m": -0.010048356756281922,
+          "normal_force_N": 3897.137844542188
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex2",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex22",
+          "gap_m": -0.017823523253625014,
+          "normal_force_N": 9036.273382990552
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "gap_m": -0.022347575838735825,
+          "normal_force_N": 12939.970383161486
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.007094454723999137,
+          "normal_force_N": 1608.6623360470903
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex20",
+          "gap_m": -0.01195435777169372,
+          "normal_force_N": 4615.358751525594
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex5",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "gap_m": -0.008691286903077635,
+          "normal_force_N": 6368.950218354016
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex4",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.005777713269071399,
+          "normal_force_N": 852.8345570222073
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex5",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.004857434858311766,
+          "normal_force_N": 483.73449676277426
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_pitch_joint",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_left_shoulder_roll_link_collision0",
+          "gap_m": -0.0012052741893366099,
+          "normal_force_N": 2860.4208471182956
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex1",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.004434985536766988,
+          "normal_force_N": 2419.767453126102
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex3",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.001324547297011943,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex7",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.004227767347103934,
+          "normal_force_N": 2282.21254623848
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex11",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.021313465282944664,
+          "normal_force_N": 2617.8827390836996
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex12",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.0022154678615361385,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex14",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.015666011857182423,
+          "normal_force_N": 994.4342355692032
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex16",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.013068735267558041,
+          "normal_force_N": 1799.0580413210844
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.027949128133290847,
+          "normal_force_N": 6233.291878670528
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex19",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.008704671466832787,
+          "normal_force_N": 20.237108799075642
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex22",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.02841835257373155,
+          "normal_force_N": 7942.06872117789
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex1",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.010513984819121174,
+          "normal_force_N": 2498.223403061052
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex4",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.005582277555316619,
+          "normal_force_N": 1750.3099109572036
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex9",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.010134585433739463,
+          "normal_force_N": 361.72249180263896
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex11",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.038972784931167785,
+          "normal_force_N": 7312.44413328629
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex14",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.01820191048596207,
+          "normal_force_N": 2401.930839602083
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.0286309575229366,
+          "normal_force_N": 3405.4012391024457
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex21",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.0011770370298365665,
+          "normal_force_N": 481.79710367286816
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex22",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.026155347755376007,
+          "normal_force_N": 3359.8066394212537
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex23",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.01209981688654234,
+          "normal_force_N": 2136.58996051428
+        },
+        {
+          "a": "r1a7_left_elbow_link_collision0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.03387251447128308,
+          "normal_force_N": 1707.8421497042775
+        },
+        {
+          "a": "r1a7_left_elbow_link_collision0",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.0016204781997852654,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_left_wrist_roll_link_collision0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.019090000520492884,
+          "normal_force_N": 829.9964189958364
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_pitch_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_RL_thigh_collision_1",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.052517331467941346,
+          "normal_force_N": 8.763139610729452
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_yaw_joint",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.022266677445800808,
+          "normal_force_N": 17407.553322621687
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.039353681843267034,
+          "normal_force_N": 29675.806667460944
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.02719861201701634,
+          "normal_force_N": 20106.16421099165
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.01954831090341638,
+          "normal_force_N": 8851.977153295404
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.038305970534828634,
+          "normal_force_N": 15304.545027887252
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.020437084941405174,
+          "normal_force_N": 7133.358799191359
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.022718339760001528,
+          "normal_force_N": 8348.980519638424
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.013491480256594182,
+          "normal_force_N": 5420.469022626883
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.03341484130282849,
+          "normal_force_N": 9414.632455156043
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.015877997625738702,
+          "normal_force_N": 2927.8231155656003
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.005293770256376866,
+          "normal_force_N": 1630.7501872189446
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.014578536286691684,
+          "normal_force_N": 1770.7576209791064
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.03608432586670955,
+          "normal_force_N": 3338.533825021012
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.013912056590328927,
+          "normal_force_N": 954.8936895043121
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.04545354673470015,
+          "normal_force_N": 33759.95858870739
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.038331236018309234,
+          "normal_force_N": 15883.038189378985
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.029012845946037594,
+          "normal_force_N": 7674.509912482078
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.021771546745237635,
+          "normal_force_N": 1723.4340061266007
+        },
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.01330630628321995,
+          "normal_force_N": 9256.511555997678
+        },
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.012331239098784634,
+          "normal_force_N": 5179.4495873367205
+        },
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.0030128417743794217,
+          "normal_force_N": 1543.0068557743734
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex2",
+          "gap_m": -0.03895414159845046,
+          "normal_force_N": 1256.1590465165589
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex3",
+          "gap_m": -0.02014658001267314,
+          "normal_force_N": 1289.7158302040755
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "gap_m": -0.04084114546544579,
+          "normal_force_N": 1806.1735768856731
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex11",
+          "gap_m": -0.041171977641880866,
+          "normal_force_N": 1683.0160905682799
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex15",
+          "gap_m": -0.028793064708440338,
+          "normal_force_N": 674.5446441643353
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex16",
+          "gap_m": -0.022776639669915416,
+          "normal_force_N": 2270.1531188218178
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex17",
+          "gap_m": -0.039983097256958575,
+          "normal_force_N": 1389.1493664879476
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex18",
+          "gap_m": -0.01084188557178561,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex19",
+          "gap_m": -0.020624873554573025,
+          "normal_force_N": 2064.0596662866287
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex20",
+          "gap_m": -0.040990187348181724,
+          "normal_force_N": 1696.1880183135847
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex21",
+          "gap_m": -0.039492447524994125,
+          "normal_force_N": 1551.810455791878
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex22",
+          "gap_m": -0.007866891282933339,
+          "normal_force_N": 1151.5706430891541
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_shoulder_yaw_link_collision0_convex23",
+          "gap_m": -0.02798609762937527,
+          "normal_force_N": 1576.2137970261301
+        },
+        {
+          "a": "r1a7_left_wrist_yaw_link_collision0",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.03708041630527997,
+          "normal_force_N": 1139.0848717307406
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_elbow_joint",
+      "fraction": 0.5,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex5",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.0020863866502164054,
+          "normal_force_N": 84.17825796519664
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.00037236601629458114,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.0007057539436495757,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.0020680764286230536,
+          "normal_force_N": 1461.0484021843574
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_roll_link_collision0",
+          "gap_m": -0.0047084118772429085,
+          "normal_force_N": 1479.9860043854133
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.011240598417788088,
+          "normal_force_N": 2175.8240453141284
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.01856814715249666,
+          "normal_force_N": 5800.268180919411
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.03562359894002479,
+          "normal_force_N": 8897.342566369804
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex3",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.011314048945105976,
+          "normal_force_N": 2977.4742946318092
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.01529293423194488,
+          "normal_force_N": 1245.2061885123157
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.022803579240934947,
+          "normal_force_N": 1186.2085486285457
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.036587627405294094,
+          "normal_force_N": 2661.152263999404
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex3",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.01074798092307551,
+          "normal_force_N": 1031.494545987727
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_elbow_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.0016796350440478388,
+          "normal_force_N": 68.21541682210831
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_left_elbow_link_collision0",
+          "gap_m": -0.0015869576170389789,
+          "normal_force_N": 15.82935996156496
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_wrist_pitch_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.024697450501266156,
+          "normal_force_N": 4066.9786513982995
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex3",
+          "b": "r1a7_left_wrist_pitch_link_collision0",
+          "gap_m": -0.015001216743394066,
+          "normal_force_N": 2164.5094007492244
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex0",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.006414742133994985,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex1",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.052159623447961545,
+          "normal_force_N": 3415.179552167051
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex2",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.03131372612006458,
+          "normal_force_N": 1371.9251770377032
+        },
+        {
+          "a": "as2w_FL_thigh_collision_1_convex3",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.019026300749051494,
+          "normal_force_N": 2467.7788676352457
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_left_wrist_yaw_joint",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex0",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.021241744096097605,
+          "normal_force_N": 1504.964574294002
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex15",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.007992746366853657,
+          "normal_force_N": 2516.013290842792
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex19",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.055133083181365505,
+          "normal_force_N": 2409.9390454629497
+        },
+        {
+          "a": "as2w_JT128_collision_1",
+          "b": "r1a7_left_wrist_yaw_link_collision0",
+          "gap_m": -0.06366259773999414,
+          "normal_force_N": 1315.10495081989
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_shoulder_pitch_joint",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.0063969899066796355,
+          "normal_force_N": 2369.8101220800736
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex6",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.005555512085839239,
+          "normal_force_N": 183.1230090561198
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.02825923999533782,
+          "normal_force_N": 7147.931737539037
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex9",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.006542926385012106,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex11",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.015563042253594202,
+          "normal_force_N": 800.1501241624453
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex14",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.007349631480210025,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex20",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.021252359644995736,
+          "normal_force_N": 2288.58977681436
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex23",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.004020478420343743,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex1",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.018294191983808248,
+          "normal_force_N": 3472.652952570748
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex2",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.010488638385290868,
+          "normal_force_N": 535.5894898981072
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex8",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.03050490999679264,
+          "normal_force_N": 2446.1491389027474
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex11",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.01870480917570251,
+          "normal_force_N": 2114.6226461902525
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex15",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.0010519073287523248,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex17",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.009728687540212347,
+          "normal_force_N": 967.0037770777368
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex20",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.02900696414020528,
+          "normal_force_N": 4376.523127442999
+        },
+        {
+          "a": "r1a7_right_shoulder_yaw_link_collision0_convex21",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.014880584508061593,
+          "normal_force_N": 2414.684106943189
+        },
+        {
+          "a": "r1a7_right_elbow_link_collision0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.033872516547662594,
+          "normal_force_N": 1735.2967430201427
+        },
+        {
+          "a": "r1a7_right_elbow_link_collision0",
+          "b": "r1a7_camera_link_collision0",
+          "gap_m": -0.0016197693081415642,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "r1a7_right_wrist_roll_link_collision0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.01836987647006685,
+          "normal_force_N": 757.2012259215293
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_shoulder_pitch_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_RR_thigh_collision_1",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.05213802500190777,
+          "normal_force_N": 9.258380726800075
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_shoulder_yaw_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.022266576410547453,
+          "normal_force_N": 17192.348104948218
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.039345275442955796,
+          "normal_force_N": 29476.960723114385
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.02717173900551678,
+          "normal_force_N": 20138.259806731316
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.019540401960978414,
+          "normal_force_N": 8912.590161847065
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.03957192051877804,
+          "normal_force_N": 15670.333623526854
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.02272708606725588,
+          "normal_force_N": 8286.918344264184
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.020227228125542486,
+          "normal_force_N": 6934.049626949985
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.013490722107008458,
+          "normal_force_N": 5514.6255249404485
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.03470016263216384,
+          "normal_force_N": 9583.890466430033
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.0073084857288753585,
+          "normal_force_N": 2242.374823430531
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.015878942788956664,
+          "normal_force_N": 2823.351790424462
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.014478199390212068,
+          "normal_force_N": 1727.761143279166
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.03339631221834455,
+          "normal_force_N": 3113.9037299881734
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex23",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.013702819067039665,
+          "normal_force_N": 1107.6665542677154
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.04545511161694032,
+          "normal_force_N": 33905.77503521381
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.037062971503767916,
+          "normal_force_N": 15544.200643558323
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.027765181659789806,
+          "normal_force_N": 7277.130844927806
+        },
+        {
+          "a": "r1a7_pelvis_link_collision0",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.021812174466815867,
+          "normal_force_N": 1715.0344753201389
+        },
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.013306474724842947,
+          "normal_force_N": 9467.092787443722
+        },
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.01106297707585828,
+          "normal_force_N": 4839.771579637274
+        },
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.0017651779724767746,
+          "normal_force_N": 1285.747045060426
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex2",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.02950477597519387,
+          "normal_force_N": 1678.1471238010363
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex3",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0029090719673109202,
+          "normal_force_N": 537.022255597746
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex5",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.009993383369457981,
+          "normal_force_N": 1265.7010174287905
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex6",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0019898164898336386,
+          "normal_force_N": 73.20888397581295
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex9",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0416431914633879,
+          "normal_force_N": 1439.6592585364888
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex10",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.023729582295718293,
+          "normal_force_N": 2266.6968713957854
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex11",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.04431553861552357,
+          "normal_force_N": 1960.408664752603
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex14",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.04410834757766527,
+          "normal_force_N": 1935.1696706181754
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex15",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.01326279125615366,
+          "normal_force_N": 1003.7383744164099
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex18",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.044284562851987494,
+          "normal_force_N": 2132.102246768084
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex19",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.018088602193838052,
+          "normal_force_N": 1182.3747123425735
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex20",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.02582192448841842,
+          "normal_force_N": 2445.357233230029
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex21",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.033180440275078125,
+          "normal_force_N": 936.1991963643968
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex22",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.04391545219952789,
+          "normal_force_N": 2154.7840767283037
+        },
+        {
+          "a": "r1a7_left_shoulder_yaw_link_collision0_convex23",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.04236554857790423,
+          "normal_force_N": 1774.0263913155225
+        },
+        {
+          "a": "r1a7_left_elbow_link_collision0",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.04065762594483169,
+          "normal_force_N": 1343.2434961058382
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_elbow_joint",
+      "fraction": 0.5,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex6",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.0020861310935025826,
+          "normal_force_N": 129.54214959903126
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex7",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.0003723645840474265,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.0014491770425105327,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.0048314328812771035,
+          "normal_force_N": 1290.160767041303
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_roll_link_collision0",
+          "gap_m": -0.001091417817299238,
+          "normal_force_N": 1749.0458314796572
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.012303961001717602,
+          "normal_force_N": 2603.978730884948
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex1",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.009941112697694243,
+          "normal_force_N": 1309.824301939491
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.03790935030929331,
+          "normal_force_N": 9677.733814208614
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex7",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.011432007454088327,
+          "normal_force_N": 1496.9699218967264
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex8",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.013360530337281582,
+          "normal_force_N": 2153.149430227122
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.00012016216707424962,
+          "normal_force_N": 513.4032963379203
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.016227511385609506,
+          "normal_force_N": 5248.295710340589
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.012505818395669633,
+          "normal_force_N": 1125.632417929752
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex1",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.009109682055502907,
+          "normal_force_N": 369.4065094310099
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0374401002220394,
+          "normal_force_N": 3073.437366437915
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex7",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.01221936600592879,
+          "normal_force_N": 511.69565181262163
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex8",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.013886885644088479,
+          "normal_force_N": 595.8487571030727
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.008714602782032716,
+          "normal_force_N": 148.48247068665947
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.02465077724455828,
+          "normal_force_N": 1058.6406778276805
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_elbow_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex8",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.0017620493509497188,
+          "normal_force_N": 36.49037962673726
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex16",
+          "b": "r1a7_right_elbow_link_collision0",
+          "gap_m": -0.0017892423252249487,
+          "normal_force_N": 54.17373416933252
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_wrist_pitch_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_FR_thigh_collision_1_convex1",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.01311299858376461,
+          "normal_force_N": 1099.032359578395
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex7",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.01627756091487385,
+          "normal_force_N": 1595.7987903041078
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex8",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.01780357308191291,
+          "normal_force_N": 2057.278720987172
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.025705694228559527,
+          "normal_force_N": 5002.750084842876
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_pitch_link_collision0",
+          "gap_m": -0.0021684969014138327,
+          "normal_force_N": 1157.2002044513508
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex0",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0027658260439194686,
+          "normal_force_N": 0.0
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex1",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.01661366480492098,
+          "normal_force_N": 1151.1994610136785
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex2",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.02831736752589943,
+          "normal_force_N": 1079.7000198095607
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex7",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.019756917396194024,
+          "normal_force_N": 1306.7936812010676
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex8",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.021431231366333296,
+          "normal_force_N": 1385.8640773564764
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex9",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.044035329221833175,
+          "normal_force_N": 4296.820909917329
+        },
+        {
+          "a": "as2w_FR_thigh_collision_1_convex10",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0494460720023618,
+          "normal_force_N": 2693.2933105063894
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_right_wrist_yaw_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "as2w_base_link_collision_1_convex0",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.020857391434427348,
+          "normal_force_N": 1424.7233042296305
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex13",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.00325955675633239,
+          "normal_force_N": 1701.3140752373554
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex15",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.011999268377674305,
+          "normal_force_N": 2262.3616901868118
+        },
+        {
+          "a": "as2w_base_link_collision_1_convex19",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.0508641525407061,
+          "normal_force_N": 2756.507536901212
+        },
+        {
+          "a": "as2w_JT128_collision_1",
+          "b": "r1a7_right_wrist_yaw_link_collision0",
+          "gap_m": -0.06089258779367327,
+          "normal_force_N": 2255.082418169147
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_head_yaw_joint",
+      "fraction": 0.1,
+      "contacts": [
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.0014342170194445879,
+          "normal_force_N": 944.438198228112
+        }
+      ]
+    },
+    {
+      "joint": "r1a7_head_yaw_joint",
+      "fraction": 0.9,
+      "contacts": [
+        {
+          "a": "r1a7_waist_yaw_link_collision0",
+          "b": "r1a7_head_yaw_link_collision0",
+          "gap_m": -0.0014342174382735368,
+          "normal_force_N": 944.43833307213
+        }
+      ]
+    }
+  ],
+  "floating_0_1s_finite": true,
+  "floating_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fixed_gravity_hold_0_5s_max_drift_rad": 0.0,
+  "collision_meshes": 99,
+  "status": "passed_home_and_smoke",
+  "limitations": [
+    "Approximate convex decomposition, not CAD interference verification.",
+    "Joint sweep is sparse, not a collision-free operating envelope.",
+    "No floating standing controller validation."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "case": "push_x",
+  "duration_s": 15,
+  "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+  "mujoco_version": "3.17.0",
+  "max_roll_pitch_deg": 0.4072316303187824,
+  "height_range_m": [
+    0.42279366070349683,
+    0.4244920557139675
+  ],
+  "max_xy_displacement_m": 0.0056268310119772305,
+  "final_position_m": [
+    0.00010021148135058596,
+    -2.2627279995143965e-05,
+    0.42322544106193977
+  ],
+  "final_roll_pitch_yaw_deg": [
+    0.0017797207419582054,
+    0.01340724722836806,
+    -0.020456850713278903
+  ],
+  "final_second_base_velocity_rms": [
+    2.3180458940613492e-06,
+    6.162243437351526e-06,
+    1.5207315177205868e-06,
+    1.4517022422446939e-05,
+    4.041515150273917e-06,
+    5.749103848840304e-05
+  ],
+  "final_second_wheel_load_mean_N": [
+    110.75425373652291,
+    108.96899080158808,
+    96.0284415400436,
+    98.22450752710043
+  ],
+  "final_second_joint_error_max_rad": 0.04588346298575985,
+  "all_four_loaded_sample_fraction": 1.0,
+  "max_torque_limit_fraction": 0.2444141227358433,
+  "saturated_steps": 0,
+  "internal_contact_steps": 0,
+  "engine_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "push_N": 30,
+  "push_duration_s": 0.2,
+  "push_yaw_torque_Nm": 0,
+  "controller": "static torque feedforward, joint PD and longitudinal/yaw base feedback",
+  "no_virtual_support": true,
+  "max_yaw_deg": 0.030895884659949406,
+  "acceptance_limits": {
+    "roll_pitch_deg": 2,
+    "height_error_m": 0.01,
+    "xy_displacement_m": 0.03,
+    "internal_contact_steps": 0,
+    "saturated_steps": 0
+  },
+  "passed": true
+}

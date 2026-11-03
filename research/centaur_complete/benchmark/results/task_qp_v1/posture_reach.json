@@ -1,0 +1,50 @@
+{
+  "task": "posture_reach",
+  "seed": 42,
+  "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+  "config_sha256": "b610d85fa16a32a20b274bc3bf268e1541d9363ff96edd8fb117248600f0c684",
+  "benchmark_version": "centaur-benchmark-v1.0",
+  "seconds": 11.999999999998789,
+  "rmse_base_m": 0.000837820728918475,
+  "rmse_hands_m": [
+    0.0011862525893116694,
+    0.0011867139376531062
+  ],
+  "rmse_base_orientation_deg": 0.013724968149733984,
+  "rmse_hand_orientation_deg": [
+    0.02972254676407032,
+    0.029916676247816215
+  ],
+  "final_errors": [
+    0.0009874866932783272,
+    0.0009894489030363948,
+    0.0009900450234476236,
+    2.9278402910835558e-05,
+    5.107183611880523e-05,
+    5.056709199578748e-05
+  ],
+  "absolute_joint_mechanical_work_J": 3.6020599573751544,
+  "clipped_action_steps": 0,
+  "max_torque_fraction": 0.23312586283722264,
+  "internal_contact_steps": 0,
+  "total_reward": -0.13622553904539203,
+  "checks": {
+    "completed": true,
+    "base_rmse": true,
+    "hands_rmse": true,
+    "base_orientation": true,
+    "hand_orientation": true,
+    "final_base": true,
+    "final_hands": true,
+    "final_base_orientation": true,
+    "no_internal_contacts": true
+  },
+  "success": true,
+  "controller_sha256": "d07e2ddc5840a074038a810fa62ab9da4ea4f95831dde17b74ef9bde0be1726f",
+  "policy": "whole_body_reference_qp_with_pd_and_wheel_feedback",
+  "mujoco_version": "3.17.0",
+  "qp_reference_internal_contacts": 0,
+  "qp_max_constraint_residual": 5.5769579896847574e-12,
+  "minimum_reference_wheel_load_N": 93.36148697259974,
+  "static_base_residual": 5.684341886080802e-14
+}

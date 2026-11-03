@@ -1,0 +1,4713 @@
+{
+  "mujoco_version": "3.3.7",
+  "scope": "geometric and actuator diagnostic, not standing validation",
+  "mass_kg": 42.199409010000004,
+  "home_com_base_m": [
+    0.012813950400992272,
+    -0.0001744031887488715,
+    0.03112649520153249
+  ],
+  "home_contact_count": 0,
+  "wheel_gaps_m": {
+    "FL": 0.0005000016758617831,
+    "FR": 0.0005000025926058249,
+    "RL": 0.0004999982863812119,
+    "RR": 0.0005000022919995906
+  },
+  "diagnostic_lowering_m": 0.000600002592605825,
+  "contacts_after_diagnostic_lowering": [
+    {
+      "a": "as2w_floor",
+      "b": "as2w_FL_foot_collision_1",
+      "distance_m": -0.00010000091674405853
+    },
+    {
+      "a": "as2w_floor",
+      "b": "as2w_FR_foot_collision_1",
+      "distance_m": -0.00010000000000001674
+    },
+    {
+      "a": "as2w_floor",
+      "b": "as2w_RL_foot_collision_1",
+      "distance_m": -0.00010000430622462975
+    },
+    {
+      "a": "as2w_floor",
+      "b": "as2w_RR_foot_collision_1",
+      "distance_m": -0.00010000030060625109
+    }
+  ],
+  "home_convex_overlaps": [
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_FL_hip_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.05101164581849622
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_FL_thigh_collision_1",
+      "relation": "nonadjacent",
+      "signed_convex_distance_m": -0.010457545301706964
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_FR_hip_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.05101165020007838
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_FR_thigh_collision_1",
+      "relation": "nonadjacent",
+      "signed_convex_distance_m": -0.010445379549006638
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_RL_hip_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.011617041688205347
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_RR_hip_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.01161704067009719
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "as2w_JT128_collision_1",
+      "relation": "same_weld",
+      "signed_convex_distance_m": -0.09858584822895079
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "r1a7_pelvis_link_collision0",
+      "relation": "same_weld",
+      "signed_convex_distance_m": -0.03813622181225788
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "r1a7_waist_yaw_link_collision0",
+      "relation": "nonadjacent",
+      "signed_convex_distance_m": -0.005953958700225912
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "r1a7_left_shoulder_yaw_link_collision0",
+      "relation": "nonadjacent",
+      "signed_convex_distance_m": -0.000856119731877097
+    },
+    {
+      "a": "as2w_base_link_collision_1",
+      "b": "r1a7_right_shoulder_yaw_link_collision0",
+      "relation": "nonadjacent",
+      "signed_convex_distance_m": -0.0008563949079053579
+    },
+    {
+      "a": "as2w_FL_hip_collision_1",
+      "b": "as2w_FL_thigh_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.011434649535397893
+    },
+    {
+      "a": "as2w_FL_thigh_collision_1",
+      "b": "as2w_FL_calf_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.03583276625353156
+    },
+    {
+      "a": "as2w_FL_calf_collision_1",
+      "b": "as2w_FL_foot_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.008293169502716862
+    },
+    {
+      "a": "as2w_FR_hip_collision_1",
+      "b": "as2w_FR_thigh_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.011434650839493497
+    },
+    {
+      "a": "as2w_FR_thigh_collision_1",
+      "b": "as2w_FR_calf_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.03582371737326164
+    },
+    {
+      "a": "as2w_FR_calf_collision_1",
+      "b": "as2w_FR_foot_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.00829316497194922
+    },
+    {
+      "a": "as2w_RL_hip_collision_1",
+      "b": "as2w_RL_thigh_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.011425441992916698
+    },
+    {
+      "a": "as2w_RL_thigh_collision_1",
+      "b": "as2w_RL_calf_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.03583278088865879
+    },
+    {
+      "a": "as2w_RL_calf_collision_1",
+      "b": "as2w_RL_foot_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.008293169345964701
+    },
+    {
+      "a": "as2w_RR_hip_collision_1",
+      "b": "as2w_RR_thigh_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.011425441708006091
+    },
+    {
+      "a": "as2w_RR_thigh_collision_1",
+      "b": "as2w_RR_calf_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.035823735804610936
+    },
+    {
+      "a": "as2w_RR_calf_collision_1",
+      "b": "as2w_RR_foot_collision_1",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.008293169075930059
+    },
+    {
+      "a": "r1a7_waist_yaw_link_collision0",
+      "b": "r1a7_left_shoulder_pitch_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.009291500392844779
+    },
+    {
+      "a": "r1a7_waist_yaw_link_collision0",
+      "b": "r1a7_right_shoulder_pitch_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.005454563140779647
+    },
+    {
+      "a": "r1a7_waist_yaw_link_collision0",
+      "b": "r1a7_head_pitch_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.06643510062011725
+    },
+    {
+      "a": "r1a7_left_shoulder_pitch_link_collision0",
+      "b": "r1a7_left_shoulder_roll_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.07583751701791783
+    },
+    {
+      "a": "r1a7_left_shoulder_roll_link_collision0",
+      "b": "r1a7_left_shoulder_yaw_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.0021603819851959915
+    },
+    {
+      "a": "r1a7_left_shoulder_yaw_link_collision0",
+      "b": "r1a7_left_elbow_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.04450811708238568
+    },
+    {
+      "a": "r1a7_left_elbow_link_collision0",
+      "b": "r1a7_left_wrist_roll_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.002217093702207446
+    },
+    {
+      "a": "r1a7_left_wrist_roll_link_collision0",
+      "b": "r1a7_left_wrist_pitch_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.053802503699070435
+    },
+    {
+      "a": "r1a7_left_wrist_pitch_link_collision0",
+      "b": "r1a7_left_wrist_yaw_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.048408686527424055
+    },
+    {
+      "a": "r1a7_right_shoulder_pitch_link_collision0",
+      "b": "r1a7_right_shoulder_roll_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.07583752124993294
+    },
+    {
+      "a": "r1a7_right_shoulder_roll_link_collision0",
+      "b": "r1a7_right_shoulder_yaw_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.0020040965314174924
+    },
+    {
+      "a": "r1a7_right_shoulder_yaw_link_collision0",
+      "b": "r1a7_right_elbow_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.04452419920018262
+    },
+    {
+      "a": "r1a7_right_elbow_link_collision0",
+      "b": "r1a7_right_wrist_roll_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.0022147117046084535
+    },
+    {
+      "a": "r1a7_right_wrist_roll_link_collision0",
+      "b": "r1a7_right_wrist_pitch_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.05380259879747045
+    },
+    {
+      "a": "r1a7_right_wrist_pitch_link_collision0",
+      "b": "r1a7_right_wrist_yaw_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.04840867283274545
+    },
+    {
+      "a": "r1a7_head_pitch_link_collision0",
+      "b": "r1a7_head_yaw_link_collision0",
+      "relation": "adjacent",
+      "signed_convex_distance_m": -0.0868064450284633
+    },
+    {
+      "a": "r1a7_head_pitch_link_collision0",
+      "b": "r1a7_camera_link_collision0",
+      "relation": "nonadjacent",
+      "signed_convex_distance_m": -0.0017669889202243582
+    },
+    {
+      "a": "r1a7_head_yaw_link_collision0",
+      "b": "r1a7_camera_link_collision0",
+      "relation": "same_weld",
+      "signed_convex_distance_m": -0.024404678475551587
+    }
+  ],
+  "ground_clearances": [
+    {
+      "geom": "as2w_base_link_collision_1",
+      "ground_gap_m": 0.3606915370596007
+    },
+    {
+      "geom": "as2w_FL_hip_collision_1",
+      "ground_gap_m": 0.3812527987539279
+    },
+    {
+      "geom": "as2w_FL_thigh_collision_1",
+      "ground_gap_m": 0.23774567308189806
+    },
+    {
+      "geom": "as2w_FL_calf_collision_1",
+      "ground_gap_m": 0.047001942615468084
+    },
+    {
+      "geom": "as2w_FL_foot_collision_1",
+      "ground_gap_m": 0.0005000016758617831
+    },
+    {
+      "geom": "as2w_FR_hip_collision_1",
+      "ground_gap_m": 0.3812527990112302
+    },
+    {
+      "geom": "as2w_FR_thigh_collision_1",
+      "ground_gap_m": 0.23774567716676823
+    },
+    {
+      "geom": "as2w_FR_calf_collision_1",
+      "ground_gap_m": 0.04700194339230489
+    },
+    {
+      "geom": "as2w_FR_foot_collision_1",
+      "ground_gap_m": 0.0005000025926058249
+    },
+    {
+      "geom": "as2w_RL_hip_collision_1",
+      "ground_gap_m": 0.38125279914962723
+    },
+    {
+      "geom": "as2w_RL_thigh_collision_1",
+      "ground_gap_m": 0.23774573225967827
+    },
+    {
+      "geom": "as2w_RL_calf_collision_1",
+      "ground_gap_m": 0.047001975239417224
+    },
+    {
+      "geom": "as2w_RL_foot_collision_1",
+      "ground_gap_m": 0.0004999982863812119
+    },
+    {
+      "geom": "as2w_RR_hip_collision_1",
+      "ground_gap_m": 0.38125279949861407
+    },
+    {
+      "geom": "as2w_RR_thigh_collision_1",
+      "ground_gap_m": 0.23774573604653393
+    },
+    {
+      "geom": "as2w_RR_calf_collision_1",
+      "ground_gap_m": 0.047001974886373005
+    },
+    {
+      "geom": "as2w_RR_foot_collision_1",
+      "ground_gap_m": 0.0005000022919995906
+    },
+    {
+      "geom": "as2w_JT128_collision_1",
+      "ground_gap_m": 0.4441131332724199
+    },
+    {
+      "geom": "r1a7_pelvis_link_collision0",
+      "ground_gap_m": 0.49803953038078363
+    },
+    {
+      "geom": "r1a7_waist_yaw_link_collision0",
+      "ground_gap_m": 0.5240395270528033
+    },
+    {
+      "geom": "r1a7_left_shoulder_pitch_link_collision0",
+      "ground_gap_m": 0.6669293714598152
+    },
+    {
+      "geom": "r1a7_left_shoulder_roll_link_collision0",
+      "ground_gap_m": 0.5984141602111185
+    },
+    {
+      "geom": "r1a7_left_shoulder_yaw_link_collision0",
+      "ground_gap_m": 0.4776063826390208
+    },
+    {
+      "geom": "r1a7_left_elbow_link_collision0",
+      "ground_gap_m": 0.4685148697524526
+    },
+    {
+      "geom": "r1a7_left_wrist_roll_link_collision0",
+      "ground_gap_m": 0.4704157418864365
+    },
+    {
+      "geom": "r1a7_left_wrist_pitch_link_collision0",
+      "ground_gap_m": 0.47751517375820646
+    },
+    {
+      "geom": "r1a7_left_wrist_yaw_link_collision0",
+      "ground_gap_m": 0.4737997503609959
+    },
+    {
+      "geom": "r1a7_right_shoulder_pitch_link_collision0",
+      "ground_gap_m": 0.6669293732448507
+    },
+    {
+      "geom": "r1a7_right_shoulder_roll_link_collision0",
+      "ground_gap_m": 0.5984137772089566
+    },
+    {
+      "geom": "r1a7_right_shoulder_yaw_link_collision0",
+      "ground_gap_m": 0.47760638094718755
+    },
+    {
+      "geom": "r1a7_right_elbow_link_collision0",
+      "ground_gap_m": 0.4685148694672595
+    },
+    {
+      "geom": "r1a7_right_wrist_roll_link_collision0",
+      "ground_gap_m": 0.46914583039186275
+    },
+    {
+      "geom": "r1a7_right_wrist_pitch_link_collision0",
+      "ground_gap_m": 0.47624328229512386
+    },
+    {
+      "geom": "r1a7_right_wrist_yaw_link_collision0",
+      "ground_gap_m": 0.4771911766461735
+    },
+    {
+      "geom": "r1a7_head_pitch_link_collision0",
+      "ground_gap_m": 0.7510500784739247
+    },
+    {
+      "geom": "r1a7_head_yaw_link_collision0",
+      "ground_gap_m": 0.7971065863052013
+    },
+    {
+      "geom": "r1a7_camera_link_collision0",
+      "ground_gap_m": 0.8363078289142849
+    }
+  ],
+  "joints": [
+    {
+      "name": "as2w_FL_hip",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.785,
+        0.785
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FL_thigh",
+      "home_rad": 0.65,
+      "limited": true,
+      "range_rad": [
+        -2.0,
+        3.492
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FL_calf",
+      "home_rad": -1.3,
+      "limited": true,
+      "range_rad": [
+        -2.7677,
+        -0.8133
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FL_foot",
+      "home_rad": 0.65,
+      "limited": false,
+      "range_rad": null,
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FR_hip",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.785,
+        0.785
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FR_thigh",
+      "home_rad": 0.65,
+      "limited": true,
+      "range_rad": [
+        -2.0,
+        3.492
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FR_calf",
+      "home_rad": -1.3,
+      "limited": true,
+      "range_rad": [
+        -2.7677,
+        -0.8133
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_FR_foot",
+      "home_rad": 0.65,
+      "limited": false,
+      "range_rad": null,
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RL_hip",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.785,
+        0.785
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RL_thigh",
+      "home_rad": 0.65,
+      "limited": true,
+      "range_rad": [
+        -1.3,
+        4.19
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RL_calf",
+      "home_rad": -1.3,
+      "limited": true,
+      "range_rad": [
+        -2.7677,
+        -0.8133
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RL_foot",
+      "home_rad": 0.65,
+      "limited": false,
+      "range_rad": null,
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RR_hip",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.785,
+        0.785
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RR_thigh",
+      "home_rad": 0.65,
+      "limited": true,
+      "range_rad": [
+        -1.3,
+        4.19
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RR_calf",
+      "home_rad": -1.3,
+      "limited": true,
+      "range_rad": [
+        -2.7677,
+        -0.8133
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "as2w_RR_foot",
+      "home_rad": 0.65,
+      "limited": false,
+      "range_rad": null,
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_waist_yaw_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -2.618,
+        2.618
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "r1a7_left_shoulder_pitch_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -3.1416,
+        2.0944
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.9659075480985936,
+        0.25888725060567014
+      ]
+    },
+    {
+      "name": "r1a7_left_shoulder_roll_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.22689,
+        2.4784
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_left_shoulder_yaw_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.9199,
+        1.9199
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "r1a7_left_elbow_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.97564,
+        2.1852
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_left_wrist_roll_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.9199,
+        1.9199
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_left_wrist_pitch_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.6144,
+        1.6144
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_left_wrist_yaw_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.6144,
+        1.6144
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "r1a7_right_shoulder_pitch_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -3.1416,
+        2.0944
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.9659075480985936,
+        -0.25888725060567014
+      ]
+    },
+    {
+      "name": "r1a7_right_shoulder_roll_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -2.47849,
+        0.2268
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_right_shoulder_yaw_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.9199,
+        1.9199
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "r1a7_right_elbow_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.97564,
+        2.1852
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_right_wrist_roll_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.9199,
+        1.9199
+      ],
+      "home_legal": true,
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_world_home": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_right_wrist_pitch_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.6144,
+        1.6144
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_right_wrist_yaw_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -1.6144,
+        1.6144
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "r1a7_head_pitch_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -0.62832,
+        0.62832
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_world_home": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "r1a7_head_yaw_joint",
+      "home_rad": 0.0,
+      "limited": true,
+      "range_rad": [
+        -2.0071,
+        2.0071
+      ],
+      "home_legal": true,
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world_home": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "actuators": [
+    {
+      "actuator": "as2w_FL_hip_motor",
+      "joint": "as2w_FL_hip",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_FL_thigh_motor",
+      "joint": "as2w_FL_thigh",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_FL_calf_motor",
+      "joint": "as2w_FL_calf",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -90.0,
+        90.0
+      ]
+    },
+    {
+      "actuator": "as2w_FL_foot_motor",
+      "joint": "as2w_FL_foot",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -15.0,
+        15.0
+      ]
+    },
+    {
+      "actuator": "as2w_FR_hip_motor",
+      "joint": "as2w_FR_hip",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_FR_thigh_motor",
+      "joint": "as2w_FR_thigh",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_FR_calf_motor",
+      "joint": "as2w_FR_calf",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -90.0,
+        90.0
+      ]
+    },
+    {
+      "actuator": "as2w_FR_foot_motor",
+      "joint": "as2w_FR_foot",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -15.0,
+        15.0
+      ]
+    },
+    {
+      "actuator": "as2w_RL_hip_motor",
+      "joint": "as2w_RL_hip",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_RL_thigh_motor",
+      "joint": "as2w_RL_thigh",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_RL_calf_motor",
+      "joint": "as2w_RL_calf",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -90.0,
+        90.0
+      ]
+    },
+    {
+      "actuator": "as2w_RL_foot_motor",
+      "joint": "as2w_RL_foot",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -15.0,
+        15.0
+      ]
+    },
+    {
+      "actuator": "as2w_RR_hip_motor",
+      "joint": "as2w_RR_hip",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_RR_thigh_motor",
+      "joint": "as2w_RR_thigh",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "as2w_RR_calf_motor",
+      "joint": "as2w_RR_calf",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -90.0,
+        90.0
+      ]
+    },
+    {
+      "actuator": "as2w_RR_foot_motor",
+      "joint": "as2w_RR_foot",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -15.0,
+        15.0
+      ]
+    },
+    {
+      "actuator": "r1a7_waist_yaw_joint_motor",
+      "joint": "r1a7_waist_yaw_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_shoulder_pitch_joint_motor",
+      "joint": "r1a7_left_shoulder_pitch_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_shoulder_roll_joint_motor",
+      "joint": "r1a7_left_shoulder_roll_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_shoulder_yaw_joint_motor",
+      "joint": "r1a7_left_shoulder_yaw_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_elbow_joint_motor",
+      "joint": "r1a7_left_elbow_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_wrist_roll_joint_motor",
+      "joint": "r1a7_left_wrist_roll_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_wrist_pitch_joint_motor",
+      "joint": "r1a7_left_wrist_pitch_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -10.0,
+        10.0
+      ]
+    },
+    {
+      "actuator": "r1a7_left_wrist_yaw_joint_motor",
+      "joint": "r1a7_left_wrist_yaw_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -10.0,
+        10.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_shoulder_pitch_joint_motor",
+      "joint": "r1a7_right_shoulder_pitch_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_shoulder_roll_joint_motor",
+      "joint": "r1a7_right_shoulder_roll_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -60.0,
+        60.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_shoulder_yaw_joint_motor",
+      "joint": "r1a7_right_shoulder_yaw_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_elbow_joint_motor",
+      "joint": "r1a7_right_elbow_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_wrist_roll_joint_motor",
+      "joint": "r1a7_right_wrist_roll_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_wrist_pitch_joint_motor",
+      "joint": "r1a7_right_wrist_pitch_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -10.0,
+        10.0
+      ]
+    },
+    {
+      "actuator": "r1a7_right_wrist_yaw_joint_motor",
+      "joint": "r1a7_right_wrist_yaw_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -10.0,
+        10.0
+      ]
+    },
+    {
+      "actuator": "r1a7_head_pitch_joint_motor",
+      "joint": "r1a7_head_pitch_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -33.0,
+        33.0
+      ]
+    },
+    {
+      "actuator": "r1a7_head_yaw_joint_motor",
+      "joint": "r1a7_head_yaw_joint",
+      "ctrl_Nm_test": 0.1,
+      "generalized_force_max_error": 0.0,
+      "limits_Nm": [
+        -0.86,
+        0.86
+      ]
+    }
+  ],
+  "wheel_rotation_screen": {
+    "as2w_FL_foot": {
+      "ground_gap_min_m": 0.0004999950978274437,
+      "ground_gap_max_m": 0.0006455120893850141,
+      "peak_to_peak_m": 0.00014551699155757047,
+      "positive_rolling_direction": "base +X at home (axis +Y, ground normal +Z)"
+    },
+    "as2w_FR_foot": {
+      "ground_gap_min_m": 0.0004999953937163404,
+      "ground_gap_max_m": 0.0006455114655418426,
+      "peak_to_peak_m": 0.0001455160718255022,
+      "positive_rolling_direction": "base +X at home (axis +Y, ground normal +Z)"
+    },
+    "as2w_RL_foot": {
+      "ground_gap_min_m": 0.0004999697113285961,
+      "ground_gap_max_m": 0.0006455143853988099,
+      "peak_to_peak_m": 0.00014554467407021376,
+      "positive_rolling_direction": "base +X at home (axis +Y, ground normal +Z)"
+    },
+    "as2w_RR_foot": {
+      "ground_gap_min_m": 0.0004999695542089594,
+      "ground_gap_max_m": 0.0006455122389923129,
+      "peak_to_peak_m": 0.00014554268478335353,
+      "positive_rolling_direction": "base +X at home (axis +Y, ground normal +Z)"
+    }
+  },
+  "joint_sweep_samples": 87,
+  "joint_sweep_with_nonadjacent_overlaps": [
+    {
+      "joint": "as2w_FL_hip",
+      "angle_rad": -0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FL_hip",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FL_hip",
+      "angle_rad": 0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.026918801701384006
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.014517634201586851
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.03709720275049546
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.04466242557689562
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.014517634201586851
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.03709720275049546
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.04466242557689562
+        ]
+      ]
+    },
+    {
+      "joint": "as2w_FL_thigh",
+      "angle_rad": -1.4508,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.011565871135968077
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FL_thigh",
+      "angle_rad": 0.746,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010318519169296452
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FL_thigh",
+      "angle_rad": 2.9428,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.009462415545127846
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.02169620576030888
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.07227784946753395
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.05097131858967934
+        ],
+        [
+          "as2w_FL_calf_collision_1",
+          "r1a7_left_shoulder_pitch_link_collision0",
+          -0.013987650687875903
+        ],
+        [
+          "as2w_FL_calf_collision_1",
+          "r1a7_left_shoulder_roll_link_collision0",
+          -0.04718660288962882
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.02169620576030888
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.07227784946753395
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.05097131858967934
+        ],
+        [
+          "as2w_FL_calf_collision_1",
+          "r1a7_left_shoulder_pitch_link_collision0",
+          -0.013987650687875903
+        ],
+        [
+          "as2w_FL_calf_collision_1",
+          "r1a7_left_shoulder_roll_link_collision0",
+          -0.04718660288962882
+        ]
+      ]
+    },
+    {
+      "joint": "as2w_FL_calf",
+      "angle_rad": -2.57226,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FL_calf",
+      "angle_rad": -1.7905,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FL_calf",
+      "angle_rad": -1.00874,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_hip",
+      "angle_rad": -0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.026918829774976765
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.015482683326340403
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.03790120819622012
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.04177156096105744
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.015482683326340403
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.03790120819622012
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.04177156096105744
+        ]
+      ]
+    },
+    {
+      "joint": "as2w_FR_hip",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_hip",
+      "angle_rad": 0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_thigh",
+      "angle_rad": -1.4508,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.011565058033241093
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_thigh",
+      "angle_rad": 0.746,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010307271892519156
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_thigh",
+      "angle_rad": 2.9428,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.009437232844413604
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.021492682308519816
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.07253866427502588
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05031255365757332
+        ],
+        [
+          "as2w_FR_calf_collision_1",
+          "r1a7_right_shoulder_pitch_link_collision0",
+          -0.01398663175923086
+        ],
+        [
+          "as2w_FR_calf_collision_1",
+          "r1a7_right_shoulder_roll_link_collision0",
+          -0.047186439914488815
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.021492682308519816
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.07253866427502588
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05031255365757332
+        ],
+        [
+          "as2w_FR_calf_collision_1",
+          "r1a7_right_shoulder_pitch_link_collision0",
+          -0.01398663175923086
+        ],
+        [
+          "as2w_FR_calf_collision_1",
+          "r1a7_right_shoulder_roll_link_collision0",
+          -0.047186439914488815
+        ]
+      ]
+    },
+    {
+      "joint": "as2w_FR_calf",
+      "angle_rad": -2.57226,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_calf",
+      "angle_rad": -1.7905,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_FR_calf",
+      "angle_rad": -1.00874,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_hip",
+      "angle_rad": -0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_hip",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_hip",
+      "angle_rad": 0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_thigh",
+      "angle_rad": -0.751,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "as2w_RL_calf_collision_1",
+          -0.04533381943826347
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FL_thigh_collision_1",
+          "as2w_RL_calf_collision_1",
+          -0.04533381943826347
+        ]
+      ]
+    },
+    {
+      "joint": "as2w_RL_thigh",
+      "angle_rad": 1.445,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_thigh",
+      "angle_rad": 3.641000000000001,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_calf",
+      "angle_rad": -2.57226,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_calf",
+      "angle_rad": -1.7905,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RL_calf",
+      "angle_rad": -1.00874,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_hip",
+      "angle_rad": -0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_hip",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_hip",
+      "angle_rad": 0.628,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_thigh",
+      "angle_rad": -0.751,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "as2w_RR_calf_collision_1",
+          -0.04533381962496203
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FR_thigh_collision_1",
+          "as2w_RR_calf_collision_1",
+          -0.04533381962496203
+        ]
+      ]
+    },
+    {
+      "joint": "as2w_RR_thigh",
+      "angle_rad": 1.445,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_thigh",
+      "angle_rad": 3.641000000000001,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_calf",
+      "angle_rad": -2.57226,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_calf",
+      "angle_rad": -1.7905,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "as2w_RR_calf",
+      "angle_rad": -1.00874,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_waist_yaw_joint",
+      "angle_rad": -2.0944,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005951569156970314
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_shoulder_yaw_link_collision0",
+          -0.034932623555585664
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.013302394349517058
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_shoulder_yaw_link_collision0",
+          -0.02081900517665712
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.02788310465403206
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243454
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.013302394349517058
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.02788310465403206
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_waist_yaw_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_waist_yaw_joint",
+      "angle_rad": 2.0944,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005951562852919138
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_shoulder_yaw_link_collision0",
+          -0.020808519541111188
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.0278831059119156
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_shoulder_yaw_link_collision0",
+          -0.03493406544841104
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.013252593681874694
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.001766988920224354
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.0278831059119156
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.013252593681874694
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_pitch_joint",
+      "angle_rad": -2.618,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_shoulder_roll_link_collision0",
+          -0.002137467211842416
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.03801553986444274
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.04720148438272447
+        ],
+        [
+          "r1a7_left_elbow_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.04200939562838276
+        ],
+        [
+          "r1a7_left_elbow_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.005174689874696387
+        ],
+        [
+          "r1a7_left_wrist_roll_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.02459318215750637
+        ],
+        [
+          "r1a7_left_wrist_pitch_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.0017024863382438197
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_shoulder_roll_link_collision0",
+          -0.002137467211842416
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.03801553986444274
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.04720148438272447
+        ],
+        [
+          "r1a7_left_elbow_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.04200939562838276
+        ],
+        [
+          "r1a7_left_elbow_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.005174689874696387
+        ],
+        [
+          "r1a7_left_wrist_roll_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.02459318215750637
+        ],
+        [
+          "r1a7_left_wrist_pitch_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.0017024863382438197
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_pitch_joint",
+      "angle_rad": -0.5236000000000001,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_shoulder_pitch_joint",
+      "angle_rad": 1.5707999999999998,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_RL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.063518869733061
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_RL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.063518869733061
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_roll_joint",
+      "angle_rad": 0.04363900000000001,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_shoulder_roll_joint",
+      "angle_rad": 1.125755,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_shoulder_roll_joint",
+      "angle_rad": 2.2078710000000004,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_shoulder_yaw_joint",
+      "angle_rad": -1.53592,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.05321012431744939
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.05502475627257098
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.0462022288304088
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.028942519185556955
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_elbow_link_collision0",
+          -0.05008296617750267
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.04477243422072585
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.03774506193235694
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.01102578070679171
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_elbow_link_collision0",
+          -0.019980222535008165
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.01877243787236452
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.011516086328053758
+        ],
+        [
+          "r1a7_left_wrist_pitch_link_collision0",
+          "r1a7_right_shoulder_yaw_link_collision0",
+          -0.0130814937695063
+        ],
+        [
+          "r1a7_left_wrist_yaw_link_collision0",
+          "r1a7_right_shoulder_yaw_link_collision0",
+          -0.05450692410093985
+        ],
+        [
+          "r1a7_left_wrist_yaw_link_collision0",
+          "r1a7_right_elbow_link_collision0",
+          -0.053548098575020374
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.05321012431744939
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.05502475627257098
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.0462022288304088
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.028942519185556955
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_elbow_link_collision0",
+          -0.05008296617750267
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.04477243422072585
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.03774506193235694
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.01102578070679171
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_elbow_link_collision0",
+          -0.019980222535008165
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.01877243787236452
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.011516086328053758
+        ],
+        [
+          "r1a7_left_wrist_pitch_link_collision0",
+          "r1a7_right_shoulder_yaw_link_collision0",
+          -0.0130814937695063
+        ],
+        [
+          "r1a7_left_wrist_yaw_link_collision0",
+          "r1a7_right_shoulder_yaw_link_collision0",
+          -0.05450692410093985
+        ],
+        [
+          "r1a7_left_wrist_yaw_link_collision0",
+          "r1a7_right_elbow_link_collision0",
+          -0.053548098575020374
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_shoulder_yaw_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_shoulder_yaw_joint",
+      "angle_rad": 1.5359200000000002,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_elbow_joint",
+      "angle_rad": -0.6595559999999999,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_elbow_joint",
+      "angle_rad": 0.60478,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.012303140275907263
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.006820291197417495
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.003916534325226234
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.057505873381402894
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.06934414112167366
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.012303140275907263
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.006820291197417495
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.003916534325226234
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.057505873381402894
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.06934414112167366
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_elbow_joint",
+      "angle_rad": 1.869116,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.011980454174087128
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.006171067083852542
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_elbow_link_collision0",
+          -0.011980454174087128
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_roll_link_collision0",
+          -0.006171067083852542
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_wrist_roll_joint",
+      "angle_rad": -1.53592,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_wrist_roll_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_wrist_roll_joint",
+      "angle_rad": 1.5359200000000002,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_wrist_pitch_joint",
+      "angle_rad": -1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_wrist_pitch_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_wrist_pitch_joint",
+      "angle_rad": 1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.023761364614742507
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.085778626184141
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_pitch_link_collision0",
+          -0.023761364614742507
+        ],
+        [
+          "as2w_FL_thigh_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.085778626184141
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_wrist_yaw_joint",
+      "angle_rad": -1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.07716193523313199
+        ],
+        [
+          "as2w_JT128_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.060423277472758594
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.07716193523313199
+        ],
+        [
+          "as2w_JT128_collision_1",
+          "r1a7_left_wrist_yaw_link_collision0",
+          -0.060423277472758594
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_left_wrist_yaw_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_left_wrist_yaw_joint",
+      "angle_rad": 1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_pitch_joint",
+      "angle_rad": -2.618,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_right_shoulder_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.038012652539961785
+        ],
+        [
+          "r1a7_right_shoulder_yaw_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0472009270817435
+        ],
+        [
+          "r1a7_right_elbow_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.042009399372207205
+        ],
+        [
+          "r1a7_right_elbow_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0051698607318564176
+        ],
+        [
+          "r1a7_right_wrist_roll_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.023825915759678632
+        ],
+        [
+          "r1a7_right_wrist_pitch_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.0010529206534944941
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "r1a7_right_shoulder_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.038012652539961785
+        ],
+        [
+          "r1a7_right_shoulder_yaw_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0472009270817435
+        ],
+        [
+          "r1a7_right_elbow_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.042009399372207205
+        ],
+        [
+          "r1a7_right_elbow_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0051698607318564176
+        ],
+        [
+          "r1a7_right_wrist_roll_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.023825915759678632
+        ],
+        [
+          "r1a7_right_wrist_pitch_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.0010529206534944941
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_right_shoulder_pitch_joint",
+      "angle_rad": -0.5236000000000001,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_pitch_joint",
+      "angle_rad": 1.5707999999999998,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_RR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.06303851725776881
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_RR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.06303851725776881
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_right_shoulder_roll_joint",
+      "angle_rad": -2.207961,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_roll_joint",
+      "angle_rad": -1.125845,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_roll_joint",
+      "angle_rad": -0.04372899999999991,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_yaw_joint",
+      "angle_rad": -1.53592,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_yaw_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_shoulder_yaw_joint",
+      "angle_rad": 1.5359200000000002,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.05321620845867493
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.05627512243678954
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.04739826163244854
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.026529988039810704
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_elbow_link_collision0",
+          -0.05008492500053564
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.043502429067870836
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.03647945196252067
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.011009001851349431
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_right_elbow_link_collision0",
+          -0.019980863577959897
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.017502429699225917
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.010273338771542462
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.013153496277595874
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05781605255149868
+        ],
+        [
+          "r1a7_left_elbow_link_collision0",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05687653237446911
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.05321620845867493
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.05627512243678954
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.04739826163244854
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.026529988039810704
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_elbow_link_collision0",
+          -0.05008492500053564
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.043502429067870836
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.03647945196252067
+        ],
+        [
+          "r1a7_pelvis_link_collision0",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.011009001851349431
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_right_elbow_link_collision0",
+          -0.019980863577959897
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.017502429699225917
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.010273338771542462
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.013153496277595874
+        ],
+        [
+          "r1a7_left_shoulder_yaw_link_collision0",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05781605255149868
+        ],
+        [
+          "r1a7_left_elbow_link_collision0",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05687653237446911
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_right_elbow_joint",
+      "angle_rad": -0.6595559999999999,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_elbow_joint",
+      "angle_rad": 0.60478,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.012303140121614323
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.00685880256903741
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.004035237500892741
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.05777408668584511
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.06999732404367057
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.012303140121614323
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.00685880256903741
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.004035237500892741
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.05777408668584511
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.06999732404367057
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_right_elbow_joint",
+      "angle_rad": 1.869116,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.011980452575222646
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.006204925656420923
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_elbow_link_collision0",
+          -0.011980452575222646
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_roll_link_collision0",
+          -0.006204925656420923
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_right_wrist_roll_joint",
+      "angle_rad": -1.53592,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_roll_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_roll_joint",
+      "angle_rad": 1.5359200000000002,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_pitch_joint",
+      "angle_rad": -1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_pitch_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_pitch_joint",
+      "angle_rad": 1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.024744888473884962
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.08504719065764213
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_pitch_link_collision0",
+          -0.024744888473884962
+        ],
+        [
+          "as2w_FR_thigh_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.08504719065764213
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_right_wrist_yaw_joint",
+      "angle_rad": -1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_yaw_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_right_wrist_yaw_joint",
+      "angle_rad": 1.29152,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.07323744948846363
+        ],
+        [
+          "as2w_JT128_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05724151961470075
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.07323744948846363
+        ],
+        [
+          "as2w_JT128_collision_1",
+          "r1a7_right_wrist_yaw_link_collision0",
+          -0.05724151961470075
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_head_pitch_joint",
+      "angle_rad": -0.502656,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243032
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_head_pitch_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_head_pitch_joint",
+      "angle_rad": 0.502656,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243392
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_head_yaw_joint",
+      "angle_rad": -1.60568,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.0014342170194445879
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.0014342170194445879
+        ]
+      ]
+    },
+    {
+      "joint": "r1a7_head_yaw_joint",
+      "angle_rad": 0.0,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_head_pitch_link_collision0",
+          "r1a7_camera_link_collision0",
+          -0.0017669889202243582
+        ]
+      ],
+      "new_pairs_relative_to_home": []
+    },
+    {
+      "joint": "r1a7_head_yaw_joint",
+      "angle_rad": 1.60568,
+      "overlaps": [
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FL_thigh_collision_1",
+          -0.010457545301706964
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "as2w_FR_thigh_collision_1",
+          -0.010445379549006638
+        ],
+        [
+          "as2w_base_link_collision_1",
+          "r1a7_waist_yaw_link_collision0",
+          -0.005953958700225912
+        ],
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.001434217438273541
+        ]
+      ],
+      "new_pairs_relative_to_home": [
+        [
+          "r1a7_waist_yaw_link_collision0",
+          "r1a7_head_yaw_link_collision0",
+          -0.001434217438273541
+        ]
+      ]
+    }
+  ],
+  "self_collision_enabled": false
+}

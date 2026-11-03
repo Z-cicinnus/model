@@ -1,0 +1,1511 @@
+{
+  "model_sha256": "bf396285681f533f12852d8ef653850f8c3a286f51e8ff5e4ece7dba75b8904e",
+  "mujoco_version": "3.3.7",
+  "mass_kg": 42.199409010000004,
+  "gravity_m_s2": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "assumptions": [
+    "Unloaded, horizontal rigid ground; four unilateral point contacts.",
+    "Only vertical contact forces; zero tangential forces and zero contact moments.",
+    "Minimum squared deviation from equal loading; redundant support load is not unique.",
+    "Static qvel=qacc=0; source torque limits, not verified continuous motor ratings.",
+    "Contact points are geometric estimates from a 0.1mm query probe, then projected to z=0.",
+    "Ideal-force forward dynamics disables collision solver only in that verification; does not test soft-contact standing."
+  ],
+  "cases": [
+    {
+      "label": "home",
+      "thigh_rad": 0.65,
+      "knee_rad": -1.3,
+      "base_height_m": 0.4235395284073942,
+      "qpos": [
+        0.0,
+        0.0,
+        0.4235395284073942,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.65,
+        -1.3,
+        0.65,
+        0.0,
+        0.65,
+        -1.3,
+        0.65,
+        0.0,
+        0.65,
+        -1.3,
+        0.65,
+        0.0,
+        0.65,
+        -1.3,
+        0.65,
+        0.0,
+        0.0,
+        0.05235987755982989,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.05235987755982989,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "com_world_m": [
+        0.012813950400992272,
+        -0.0001750072049725595,
+        0.4547178354970193
+      ],
+      "com_in_base_m": [
+        0.012813950400992272,
+        -0.0001750072049725595,
+        0.0311783070896251
+      ],
+      "contact_positions_world_m": {
+        "FL": [
+          0.21189999326585396,
+          0.22001428223197836,
+          0.0
+        ],
+        "FR": [
+          0.2118999933637548,
+          -0.22001428221261723,
+          0.0
+        ],
+        "RL": [
+          -0.2118999924905487,
+          0.22001428222658745,
+          0.0
+        ],
+        "RR": [
+          -0.21189999244764546,
+          -0.22001428222601715,
+          0.0
+        ]
+      },
+      "vertical_loads_N": {
+        "FL": 109.67018753725341,
+        "FR": 109.8348332591351,
+        "RL": 97.15326793572554,
+        "RR": 97.31791365598588
+      },
+      "total_weight_N": 413.9762023880999,
+      "support_polygon_margin_m": 0.19908604291385104,
+      "equilibrium_residual_max": 8.881784197001252e-16,
+      "global_moment_residual_Nm": [
+        3.552713678800501e-15,
+        -1.4210854715202004e-14,
+        0.0
+      ],
+      "ideal_forward_dynamics_max_acceleration": 2.952972059687871e-15,
+      "joint_angles_legal": true,
+      "internal_contacts": [],
+      "feasible_under_assumptions": true,
+      "max_utilization": 0.24045236820921664,
+      "torques": [
+        {
+          "actuator": "as2w_FL_hip_motor",
+          "joint": "as2w_FL_hip",
+          "holding_torque_Nm": -14.400796427670064,
+          "ctrl": -14.400796427670064,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.24001327379450108,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_thigh_motor",
+          "joint": "as2w_FL_thigh",
+          "holding_torque_Nm": 0.6461965556068184,
+          "ctrl": 0.6461965556068184,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.010769942593446973,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_calf_motor",
+          "joint": "as2w_FL_calf",
+          "holding_torque_Nm": 12.204128820043492,
+          "ctrl": 12.204128820043492,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.13560143133381658,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_foot_motor",
+          "joint": "as2w_FL_foot",
+          "holding_torque_Nm": -7.385350567624902e-07,
+          "ctrl": -7.385350567624902e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.9235670450832676e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_hip_motor",
+          "joint": "as2w_FR_hip",
+          "holding_torque_Nm": 14.427142092552998,
+          "ctrl": 14.427142092552998,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.24045236820921664,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_thigh_motor",
+          "joint": "as2w_FR_thigh",
+          "holding_torque_Nm": 0.6461948471429401,
+          "ctrl": 0.6461948471429401,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.010769914119049002,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_calf_motor",
+          "joint": "as2w_FR_calf",
+          "holding_torque_Nm": 12.225251078340436,
+          "ctrl": 12.225251078340436,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.1358361230926715,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_foot_motor",
+          "joint": "as2w_FR_foot",
+          "holding_torque_Nm": -7.288908811100513e-07,
+          "ctrl": -7.288908811100513e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.8592725407336753e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_hip_motor",
+          "joint": "as2w_RL_hip",
+          "holding_torque_Nm": -12.371215451252459,
+          "ctrl": -12.371215451252459,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.20618692418754098,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_thigh_motor",
+          "joint": "as2w_RL_thigh",
+          "holding_torque_Nm": 0.5729547638703797,
+          "ctrl": 0.5729547638703797,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.009549246064506328,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_calf_motor",
+          "joint": "as2w_RL_calf",
+          "holding_torque_Nm": 10.501963382006288,
+          "ctrl": 10.501963382006288,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.11668848202229208,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_foot_motor",
+          "joint": "as2w_RL_foot",
+          "holding_torque_Nm": 7.295677433364379e-07,
+          "ctrl": 7.295677433364379e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.8637849555762527e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_hip_motor",
+          "joint": "as2w_RR_hip",
+          "holding_torque_Nm": 12.397561117946093,
+          "ctrl": 12.397561117946093,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.20662601863243488,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_thigh_motor",
+          "joint": "as2w_RR_thigh",
+          "holding_torque_Nm": 0.5729486465696951,
+          "ctrl": 0.5729486465696951,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.009549144109494919,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_calf_motor",
+          "joint": "as2w_RR_calf",
+          "holding_torque_Nm": 10.52308563586269,
+          "ctrl": 10.52308563586269,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.11692317373180768,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_foot_motor",
+          "joint": "as2w_RR_foot",
+          "holding_torque_Nm": 7.349793958370906e-07,
+          "ctrl": 7.349793958370906e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.899862638913938e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_waist_yaw_joint_motor",
+          "joint": "r1a7_waist_yaw_joint",
+          "holding_torque_Nm": 0.0,
+          "ctrl": 0.0,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.0,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_pitch_joint_motor",
+          "joint": "r1a7_left_shoulder_pitch_joint",
+          "holding_torque_Nm": -2.5672993470347882,
+          "ctrl": -2.5672993470347882,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.042788322450579806,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_roll_joint_motor",
+          "joint": "r1a7_left_shoulder_roll_joint",
+          "holding_torque_Nm": 0.34284089268664264,
+          "ctrl": 0.34284089268664264,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.005714014878110711,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_yaw_joint_motor",
+          "joint": "r1a7_left_shoulder_yaw_joint",
+          "holding_torque_Nm": 0.13912174464855576,
+          "ctrl": 0.13912174464855576,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.004215810443895629,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_elbow_joint_motor",
+          "joint": "r1a7_left_elbow_joint",
+          "holding_torque_Nm": -2.282232422050696,
+          "ctrl": -2.282232422050696,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.06915855824396049,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_roll_joint_motor",
+          "joint": "r1a7_left_wrist_roll_joint",
+          "holding_torque_Nm": -0.014526012752167139,
+          "ctrl": -0.014526012752167139,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.0004401822046111254,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_pitch_joint_motor",
+          "joint": "r1a7_left_wrist_pitch_joint",
+          "holding_torque_Nm": -0.2493396756513525,
+          "ctrl": -0.2493396756513525,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.024933967565135252,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_yaw_joint_motor",
+          "joint": "r1a7_left_wrist_yaw_joint",
+          "holding_torque_Nm": 0.0011042272091041447,
+          "ctrl": 0.0011042272091041447,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.00011042272091041447,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_pitch_joint_motor",
+          "joint": "r1a7_right_shoulder_pitch_joint",
+          "holding_torque_Nm": -2.5674844804224346,
+          "ctrl": -2.5674844804224346,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.04279140800704058,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_roll_joint_motor",
+          "joint": "r1a7_right_shoulder_roll_joint",
+          "holding_torque_Nm": -0.3428342067579333,
+          "ctrl": -0.3428342067579333,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.005713903445965555,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_yaw_joint_motor",
+          "joint": "r1a7_right_shoulder_yaw_joint",
+          "holding_torque_Nm": -0.1391317757668486,
+          "ctrl": -0.1391317757668486,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.00421611441717723,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_elbow_joint_motor",
+          "joint": "r1a7_right_elbow_joint",
+          "holding_torque_Nm": -2.282423827189973,
+          "ctrl": -2.282423827189973,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.06916435839969615,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_roll_joint_motor",
+          "joint": "r1a7_right_wrist_roll_joint",
+          "holding_torque_Nm": 0.014532698680877365,
+          "ctrl": 0.014532698680877365,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.0004403848085114353,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_pitch_joint_motor",
+          "joint": "r1a7_right_wrist_pitch_joint",
+          "holding_torque_Nm": -0.24953108079062958,
+          "ctrl": -0.24953108079062958,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.02495310807906296,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_yaw_joint_motor",
+          "joint": "r1a7_right_wrist_yaw_joint",
+          "holding_torque_Nm": -0.0011042272091041447,
+          "ctrl": -0.0011042272091041447,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.00011042272091041447,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_head_pitch_joint_motor",
+          "joint": "r1a7_head_pitch_joint",
+          "holding_torque_Nm": -0.18035056195769877,
+          "ctrl": -0.18035056195769877,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.00546516854417269,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_head_yaw_joint_motor",
+          "joint": "r1a7_head_yaw_joint",
+          "holding_torque_Nm": 0.0,
+          "ctrl": 0.0,
+          "ctrl_limits": [
+            -0.86,
+            0.86
+          ],
+          "utilization": 0.0,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "label": "higher_body",
+      "thigh_rad": 0.55,
+      "knee_rad": -1.1,
+      "base_height_m": 0.447470395175825,
+      "qpos": [
+        0.0,
+        0.0,
+        0.447470395175825,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.55,
+        -1.1,
+        0.55,
+        0.0,
+        0.55,
+        -1.1,
+        0.55,
+        0.0,
+        0.55,
+        -1.1,
+        0.55,
+        0.0,
+        0.55,
+        -1.1,
+        0.55,
+        0.0,
+        0.0,
+        0.05235987755982989,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.05235987755982989,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "com_world_m": [
+        0.013496773442409543,
+        -0.0001750072049725595,
+        0.47464051406650826
+      ],
+      "com_in_base_m": [
+        0.013496773442409543,
+        -0.0001750072049725595,
+        0.02717011889068327
+      ],
+      "contact_positions_world_m": {
+        "FL": [
+          0.21189999326585401,
+          0.22001428223197836,
+          0.0
+        ],
+        "FR": [
+          0.2118999933637548,
+          -0.22001428221261723,
+          0.0
+        ],
+        "RL": [
+          -0.2118999924905486,
+          0.22001428222658745,
+          0.0
+        ],
+        "RR": [
+          -0.21189999244764535,
+          -0.22001428222601715,
+          0.0
+        ]
+      },
+      "vertical_loads_N": {
+        "FL": 110.00368505854492,
+        "FR": 110.16833078048413,
+        "RL": 96.81977041441979,
+        "RR": 96.9844161346511
+      },
+      "total_weight_N": 413.9762023880999,
+      "support_polygon_margin_m": 0.1984032198724338,
+      "equilibrium_residual_max": 5.925815393936773e-15,
+      "global_moment_residual_Nm": [
+        0.0,
+        -3.552713678800501e-15,
+        0.0
+      ],
+      "ideal_forward_dynamics_max_acceleration": 2.1710091468241986e-14,
+      "joint_angles_legal": true,
+      "internal_contacts": [],
+      "feasible_under_assumptions": true,
+      "max_utilization": 0.24134177431752252,
+      "torques": [
+        {
+          "actuator": "as2w_FL_hip_motor",
+          "joint": "as2w_FL_hip",
+          "holding_torque_Nm": -14.454160794165668,
+          "ctrl": -14.454160794165668,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.24090267990276112,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_thigh_motor",
+          "joint": "as2w_FL_thigh",
+          "holding_torque_Nm": 0.5691505674954468,
+          "ctrl": 0.5691505674954468,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.00948584279159078,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_calf_motor",
+          "joint": "as2w_FL_calf",
+          "holding_torque_Nm": 10.574723708871641,
+          "ctrl": 10.574723708871641,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.11749693009857379,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_foot_motor",
+          "joint": "as2w_FL_foot",
+          "holding_torque_Nm": -7.407808747144909e-07,
+          "ctrl": -7.407808747144909e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.9385391647632727e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_hip_motor",
+          "joint": "as2w_FR_hip",
+          "holding_torque_Nm": 14.480506459051352,
+          "ctrl": 14.480506459051352,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.24134177431752252,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_thigh_motor",
+          "joint": "as2w_FR_thigh",
+          "holding_torque_Nm": 0.5691487372538422,
+          "ctrl": 0.5691487372538422,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.009485812287564037,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_calf_motor",
+          "joint": "as2w_FR_calf",
+          "holding_torque_Nm": 10.592966220455043,
+          "ctrl": 10.592966220455043,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.11769962467172271,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_foot_motor",
+          "joint": "as2w_FR_foot",
+          "holding_torque_Nm": -7.311040554812633e-07,
+          "ctrl": -7.311040554812633e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.8740270365417556e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_hip_motor",
+          "joint": "as2w_RL_hip",
+          "holding_torque_Nm": -12.317851084756374,
+          "ctrl": -12.317851084756374,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.2052975180792729,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_thigh_motor",
+          "joint": "as2w_RL_thigh",
+          "holding_torque_Nm": 0.5086647803861644,
+          "ctrl": 0.5086647803861644,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.008477746339769407,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_calf_motor",
+          "joint": "as2w_RL_calf",
+          "holding_torque_Nm": 9.031502305779453,
+          "ctrl": 9.031502305779453,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.1003500256197717,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_foot_motor",
+          "joint": "as2w_RL_foot",
+          "holding_torque_Nm": 7.270633572228679e-07,
+          "ctrl": 7.270633572228679e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.847089048152452e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_hip_motor",
+          "joint": "as2w_RR_hip",
+          "holding_torque_Nm": 12.344196751445553,
+          "ctrl": 12.344196751445553,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.20573661252409256,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_thigh_motor",
+          "joint": "as2w_RR_thigh",
+          "holding_torque_Nm": 0.5086582289833117,
+          "ctrl": 0.5086582289833117,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.008477637149721861,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_calf_motor",
+          "joint": "as2w_RR_calf",
+          "holding_torque_Nm": 9.049744812894131,
+          "ctrl": 9.049744812894131,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.10055272014326812,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_foot_motor",
+          "joint": "as2w_RR_foot",
+          "holding_torque_Nm": 7.324607042875547e-07,
+          "ctrl": 7.324607042875547e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.883071361917031e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_waist_yaw_joint_motor",
+          "joint": "r1a7_waist_yaw_joint",
+          "holding_torque_Nm": 0.0,
+          "ctrl": 0.0,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.0,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_pitch_joint_motor",
+          "joint": "r1a7_left_shoulder_pitch_joint",
+          "holding_torque_Nm": -2.5672993470347887,
+          "ctrl": -2.5672993470347887,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.04278832245057981,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_roll_joint_motor",
+          "joint": "r1a7_left_shoulder_roll_joint",
+          "holding_torque_Nm": 0.34284089268664264,
+          "ctrl": 0.34284089268664264,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.005714014878110711,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_yaw_joint_motor",
+          "joint": "r1a7_left_shoulder_yaw_joint",
+          "holding_torque_Nm": 0.13912174464855576,
+          "ctrl": 0.13912174464855576,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.004215810443895629,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_elbow_joint_motor",
+          "joint": "r1a7_left_elbow_joint",
+          "holding_torque_Nm": -2.282232422050696,
+          "ctrl": -2.282232422050696,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.06915855824396049,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_roll_joint_motor",
+          "joint": "r1a7_left_wrist_roll_joint",
+          "holding_torque_Nm": -0.014526012752167139,
+          "ctrl": -0.014526012752167139,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.0004401822046111254,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_pitch_joint_motor",
+          "joint": "r1a7_left_wrist_pitch_joint",
+          "holding_torque_Nm": -0.2493396756513525,
+          "ctrl": -0.2493396756513525,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.024933967565135252,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_yaw_joint_motor",
+          "joint": "r1a7_left_wrist_yaw_joint",
+          "holding_torque_Nm": 0.001104227209104143,
+          "ctrl": 0.001104227209104143,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.0001104227209104143,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_pitch_joint_motor",
+          "joint": "r1a7_right_shoulder_pitch_joint",
+          "holding_torque_Nm": -2.5674844804224346,
+          "ctrl": -2.5674844804224346,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.04279140800704058,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_roll_joint_motor",
+          "joint": "r1a7_right_shoulder_roll_joint",
+          "holding_torque_Nm": -0.3428342067579333,
+          "ctrl": -0.3428342067579333,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.005713903445965555,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_yaw_joint_motor",
+          "joint": "r1a7_right_shoulder_yaw_joint",
+          "holding_torque_Nm": -0.13913177576684863,
+          "ctrl": -0.13913177576684863,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.004216114417177231,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_elbow_joint_motor",
+          "joint": "r1a7_right_elbow_joint",
+          "holding_torque_Nm": -2.282423827189973,
+          "ctrl": -2.282423827189973,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.06916435839969615,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_roll_joint_motor",
+          "joint": "r1a7_right_wrist_roll_joint",
+          "holding_torque_Nm": 0.014532698680877365,
+          "ctrl": 0.014532698680877365,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.0004403848085114353,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_pitch_joint_motor",
+          "joint": "r1a7_right_wrist_pitch_joint",
+          "holding_torque_Nm": -0.2495310807906297,
+          "ctrl": -0.2495310807906297,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.02495310807906297,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_yaw_joint_motor",
+          "joint": "r1a7_right_wrist_yaw_joint",
+          "holding_torque_Nm": -0.0011042272091041447,
+          "ctrl": -0.0011042272091041447,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.00011042272091041447,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_head_pitch_joint_motor",
+          "joint": "r1a7_head_pitch_joint",
+          "holding_torque_Nm": -0.18035056195769877,
+          "ctrl": -0.18035056195769877,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.00546516854417269,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_head_yaw_joint_motor",
+          "joint": "r1a7_head_yaw_joint",
+          "holding_torque_Nm": 0.0,
+          "ctrl": 0.0,
+          "ctrl_limits": [
+            -0.86,
+            0.86
+          ],
+          "utilization": 0.0,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "label": "lower_body",
+      "thigh_rad": 0.75,
+      "knee_rad": -1.5,
+      "base_height_m": 0.3962360782250945,
+      "qpos": [
+        0.0,
+        0.0,
+        0.3962360782250945,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.75,
+        -1.5,
+        0.75,
+        0.0,
+        0.75,
+        -1.5,
+        0.75,
+        0.0,
+        0.75,
+        -1.5,
+        0.75,
+        0.0,
+        0.75,
+        -1.5,
+        0.75,
+        0.0,
+        0.0,
+        0.05235987755982989,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.05235987755982989,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "com_world_m": [
+        0.012189977688817398,
+        -0.0001750072049725595,
+        0.4319698555686365
+      ],
+      "com_in_base_m": [
+        0.012189977688817398,
+        -0.0001750072049725595,
+        0.035733777343541995
+      ],
+      "contact_positions_world_m": {
+        "FL": [
+          0.21189999326585393,
+          0.22001428223197836,
+          0.0
+        ],
+        "FR": [
+          0.21189999336375476,
+          -0.2200142822126172,
+          0.0
+        ],
+        "RL": [
+          -0.2118999924905487,
+          0.22001428222658742,
+          0.0
+        ],
+        "RR": [
+          -0.21189999244764543,
+          -0.22001428222601713,
+          0.0
+        ]
+      },
+      "vertical_loads_N": {
+        "FL": 109.36543309834057,
+        "FR": 109.5300788201697,
+        "RL": 97.45802237465139,
+        "RR": 97.62266809493826
+      },
+      "total_weight_N": 413.9762023881,
+      "support_polygon_margin_m": 0.1997100156260259,
+      "equilibrium_residual_max": 5.684341886080802e-14,
+      "global_moment_residual_Nm": [
+        3.552713678800501e-15,
+        3.552713678800501e-15,
+        0.0
+      ],
+      "ideal_forward_dynamics_max_acceleration": 2.497977093358091e-14,
+      "joint_angles_legal": true,
+      "internal_contacts": [],
+      "feasible_under_assumptions": true,
+      "max_utilization": 0.23963961716251406,
+      "torques": [
+        {
+          "actuator": "as2w_FL_hip_motor",
+          "joint": "as2w_FL_hip",
+          "holding_torque_Nm": -14.352031364870419,
+          "ctrl": -14.352031364870419,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.23920052274784032,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_thigh_motor",
+          "joint": "as2w_FL_thigh",
+          "holding_torque_Nm": 0.7167859537659876,
+          "ctrl": 0.7167859537659876,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.01194643256276646,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_calf_motor",
+          "joint": "as2w_FL_calf",
+          "holding_torque_Nm": 13.704509783591615,
+          "ctrl": 13.704509783591615,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.15227233092879572,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FL_foot_motor",
+          "joint": "as2w_FL_foot",
+          "holding_torque_Nm": -7.364827958710364e-07,
+          "ctrl": -7.364827958710364e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.9098853058069096e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_hip_motor",
+          "joint": "as2w_FR_hip",
+          "holding_torque_Nm": 14.378377029750844,
+          "ctrl": 14.378377029750844,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.23963961716251406,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_thigh_motor",
+          "joint": "as2w_FR_thigh",
+          "holding_torque_Nm": 0.7167843842494078,
+          "ctrl": 0.7167843842494078,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.011946406404156796,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_calf_motor",
+          "joint": "as2w_FR_calf",
+          "holding_torque_Nm": 13.72830074207723,
+          "ctrl": 13.72830074207723,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.15253667491196923,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_FR_foot_motor",
+          "joint": "as2w_FR_foot",
+          "holding_torque_Nm": -7.268684589781764e-07,
+          "ctrl": -7.268684589781764e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.845789726521176e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_hip_motor",
+          "joint": "as2w_RL_hip",
+          "holding_torque_Nm": -12.41998051405254,
+          "ctrl": -12.41998051405254,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.206999675234209,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_thigh_motor",
+          "joint": "as2w_RL_thigh",
+          "holding_torque_Nm": 0.6315199798214236,
+          "ctrl": 0.6315199798214236,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.010525332997023728,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_calf_motor",
+          "joint": "as2w_RL_calf",
+          "holding_torque_Nm": 11.874576837711444,
+          "ctrl": 11.874576837711444,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.13193974264123828,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RL_foot_motor",
+          "joint": "as2w_RL_foot",
+          "holding_torque_Nm": 7.318562767947103e-07,
+          "ctrl": 7.318562767947103e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.879041845298068e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_hip_motor",
+          "joint": "as2w_RR_hip",
+          "holding_torque_Nm": 12.446326180750248,
+          "ctrl": 12.446326180750248,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.2074387696791708,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_thigh_motor",
+          "joint": "as2w_RR_thigh",
+          "holding_torque_Nm": 0.6315143577977949,
+          "ctrl": 0.6315143577977949,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.010525239296629914,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_calf_motor",
+          "joint": "as2w_RR_calf",
+          "holding_torque_Nm": 11.89836779178459,
+          "ctrl": 11.89836779178459,
+          "ctrl_limits": [
+            -90.0,
+            90.0
+          ],
+          "utilization": 0.13220408657538435,
+          "within_limit": true
+        },
+        {
+          "actuator": "as2w_RR_foot_motor",
+          "joint": "as2w_RR_foot",
+          "holding_torque_Nm": 7.372810069477704e-07,
+          "ctrl": 7.372810069477704e-07,
+          "ctrl_limits": [
+            -15.0,
+            15.0
+          ],
+          "utilization": 4.915206712985136e-08,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_waist_yaw_joint_motor",
+          "joint": "r1a7_waist_yaw_joint",
+          "holding_torque_Nm": 0.0,
+          "ctrl": 0.0,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.0,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_pitch_joint_motor",
+          "joint": "r1a7_left_shoulder_pitch_joint",
+          "holding_torque_Nm": -2.5672993470347887,
+          "ctrl": -2.5672993470347887,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.04278832245057981,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_roll_joint_motor",
+          "joint": "r1a7_left_shoulder_roll_joint",
+          "holding_torque_Nm": 0.34284089268664264,
+          "ctrl": 0.34284089268664264,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.005714014878110711,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_shoulder_yaw_joint_motor",
+          "joint": "r1a7_left_shoulder_yaw_joint",
+          "holding_torque_Nm": 0.13912174464855576,
+          "ctrl": 0.13912174464855576,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.004215810443895629,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_elbow_joint_motor",
+          "joint": "r1a7_left_elbow_joint",
+          "holding_torque_Nm": -2.282232422050696,
+          "ctrl": -2.282232422050696,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.06915855824396049,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_roll_joint_motor",
+          "joint": "r1a7_left_wrist_roll_joint",
+          "holding_torque_Nm": -0.014526012752167139,
+          "ctrl": -0.014526012752167139,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.0004401822046111254,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_pitch_joint_motor",
+          "joint": "r1a7_left_wrist_pitch_joint",
+          "holding_torque_Nm": -0.2493396756513524,
+          "ctrl": -0.2493396756513524,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.02493396756513524,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_left_wrist_yaw_joint_motor",
+          "joint": "r1a7_left_wrist_yaw_joint",
+          "holding_torque_Nm": 0.001104227209104143,
+          "ctrl": 0.001104227209104143,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.0001104227209104143,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_pitch_joint_motor",
+          "joint": "r1a7_right_shoulder_pitch_joint",
+          "holding_torque_Nm": -2.5674844804224346,
+          "ctrl": -2.5674844804224346,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.04279140800704058,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_roll_joint_motor",
+          "joint": "r1a7_right_shoulder_roll_joint",
+          "holding_torque_Nm": -0.3428342067579333,
+          "ctrl": -0.3428342067579333,
+          "ctrl_limits": [
+            -60.0,
+            60.0
+          ],
+          "utilization": 0.005713903445965555,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_shoulder_yaw_joint_motor",
+          "joint": "r1a7_right_shoulder_yaw_joint",
+          "holding_torque_Nm": -0.13913177576684865,
+          "ctrl": -0.13913177576684865,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.004216114417177232,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_elbow_joint_motor",
+          "joint": "r1a7_right_elbow_joint",
+          "holding_torque_Nm": -2.282423827189973,
+          "ctrl": -2.282423827189973,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.06916435839969615,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_roll_joint_motor",
+          "joint": "r1a7_right_wrist_roll_joint",
+          "holding_torque_Nm": 0.014532698680877365,
+          "ctrl": 0.014532698680877365,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.0004403848085114353,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_pitch_joint_motor",
+          "joint": "r1a7_right_wrist_pitch_joint",
+          "holding_torque_Nm": -0.2495310807906297,
+          "ctrl": -0.2495310807906297,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.02495310807906297,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_right_wrist_yaw_joint_motor",
+          "joint": "r1a7_right_wrist_yaw_joint",
+          "holding_torque_Nm": -0.0011042272091041447,
+          "ctrl": -0.0011042272091041447,
+          "ctrl_limits": [
+            -10.0,
+            10.0
+          ],
+          "utilization": 0.00011042272091041447,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_head_pitch_joint_motor",
+          "joint": "r1a7_head_pitch_joint",
+          "holding_torque_Nm": -0.18035056195769875,
+          "ctrl": -0.18035056195769875,
+          "ctrl_limits": [
+            -33.0,
+            33.0
+          ],
+          "utilization": 0.005465168544172689,
+          "within_limit": true
+        },
+        {
+          "actuator": "r1a7_head_yaw_joint_motor",
+          "joint": "r1a7_head_yaw_joint",
+          "holding_torque_Nm": 0.0,
+          "ctrl": 0.0,
+          "ctrl_limits": [
+            -0.86,
+            0.86
+          ],
+          "utilization": 0.0,
+          "within_limit": true
+        }
+      ]
+    }
+  ]
+}

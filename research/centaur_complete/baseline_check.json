@@ -1,0 +1,21 @@
+{
+  "stage": "1_model_baseline",
+  "mujoco_version": "3.3.7",
+  "models": {
+    "centaur.xml": {
+      "matches_user_xml": true,
+      "compiles": true,
+      "freejoints": 1,
+      "actuators": 33,
+      "sha256": "de0831d32f1bf8f3da95e9a37b3199c5797668d1c310a26849a0345c211d2822"
+    },
+    "fixed_base.xml": {
+      "matches_user_xml": true,
+      "compiles": true,
+      "freejoints": 0,
+      "actuators": 33,
+      "sha256": "0711ba83a1d1bd5ee05433da00b3464d7198a115c1e2bbcd3ae9fbef2c3416cb"
+    }
+  },
+  "status": "passed"
+}

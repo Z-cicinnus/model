@@ -1,0 +1,59 @@
+{
+  "model": "四轮足半人马",
+  "mujoco_version": "3.17.0",
+  "status": "passed",
+  "mass_kg": {
+    "as2w": 26.0,
+    "r1_a7": 16.19940901,
+    "combined": 42.199409010000004,
+    "additional_mount": 0
+  },
+  "physical_bodies": 37,
+  "active_joint_count": 33,
+  "actuators": 33,
+  "freejoint_count": 1,
+  "nq": 40,
+  "nv": 39,
+  "max_body_mass_error_kg": 0.0,
+  "max_body_com_error_m": 0.0,
+  "max_body_inertia_error_kg_m2": 0.0,
+  "mount_position_in_base_m": [
+    0.12,
+    0.0,
+    0.165
+  ],
+  "home_com_world_m": [
+    0.06463743010497972,
+    -0.0001744031887488715,
+    0.48011807198493395
+  ],
+  "home_com_in_base_m": [
+    0.06463743010497972,
+    -0.0001744031887488715,
+    0.05607854098493392
+  ],
+  "home_mass_matrix_min_eigenvalue": 7.920085955998058e-05,
+  "base_upper_mass_matrix_block_norm": 1.520039741368944,
+  "internal_arm_torque_test_s": 0.02,
+  "internal_arm_test_integrator": "RK4",
+  "base_reaction_velocity": [
+    0.0031012099379659243,
+    4.643166877491625e-05,
+    0.00014681053729282914,
+    0.0009807313865160495,
+    0.005561058924615925,
+    0.00011442275304503418
+  ],
+  "free_space_linear_momentum_residual": 1.6246779241181066e-12,
+  "free_space_angular_momentum_residual": 3.861685724905078e-13,
+  "fixed_inspection_hold_drift_rad": 0.0,
+  "floating_contact_execution_s": 0.1,
+  "base_pelvis_convex_hull_separation_m": 0.006410794087938205,
+  "limitations": [
+    "Mount pose provisional; no added hardware connector mass or inertia.",
+    "Self-collision disabled; convex mesh environment contacts.",
+    "No locomotion stability claim; old AS2-W controller requires interface adaptation.",
+    "Source camera inertia retained pending CAD verification.",
+    "IMU and joint sensors are ideal simulation signals without noise."
+  ]
+}

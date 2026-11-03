@@ -70,3 +70,21 @@ python scripts/whole_body_diagnostics.py --model models/centaur/centaur.xml --fu
 ```
 
 These diagnostics do not establish a functioning IK/QP or stable whole-body locomotion controller.
+
+## Uploaded complete centaur research baseline and O6 hand variant
+
+New material recovered from user-provided model archives:
+
+- [`research/centaur_complete/`](research/centaur_complete/): original integrated model and self-collision variant, 33-actuator mapping, standing, pose feedback, offline whole-body velocity IK-QP, six-task benchmarks, dynamics scripts and small JSON/CSV result summaries.
+- [`models/r1_a7_o6/`](models/r1_a7_o6/): **standalone** R1-A7 + dual O6 dexterous hand model, with 39 physical joints and 29 actuators. This is **not** a validated AS2-W + O6 integrated robot.
+- [Chinese source archive and reproduction guide](docs/uploaded_archives_zh.md).
+
+Restore the original geometry, recorded NPZ data and video **locally**, without publishing third-party meshes:
+
+```bash
+python scripts/import_uploaded_archives.py --centaur-zip "/path/to/Centaur_MuJoCo_Complete (2).zip" --o6-zip "/path/to/r1_a7_o6_model(1).zip"
+python scripts/check_uploaded_models.py --strict
+python scripts/check_uploaded_models.py --strict --compile
+```
+
+The archived experiment summaries are **historical source results, not new CI reruns**. Offline reference-QP, PD and feedback baselines do not establish real-time WBC, MPC, PPO, hardware deployment or grasping success.
