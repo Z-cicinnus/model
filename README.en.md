@@ -54,3 +54,19 @@ python scripts/run_simulation.py --model models/centaur/centaur.xml --steps 500
 Read [asset provenance and redistribution constraints](docs/asset_provenance.md) and the [validation plan](docs/validation_plan.md) before publishing source geometry or interpreting numerical results.
 
 **Note:** Passing static XML checks or a mesh-free unit test does not establish that the integrated robot is able to stand, drive, turn, or manipulate objects safely.
+
+## Source archive audits and whole-body diagnostics
+
+See [the source-package and validation audit (Chinese)](docs/source_verification_zh.md). Source ZIP files can be inspected before restoring geometry:
+
+```bash
+python scripts/check_source_packages.py --as2w-zip /path/to/AS2W_control_project.zip --r1a7-zip /path/to/R1_A7_MuJoCo.zip
+```
+
+After restoring the 55 meshes and successfully compiling the whole-body model, generate a mass-matrix and Jacobian report:
+
+```bash
+python scripts/whole_body_diagnostics.py --model models/centaur/centaur.xml --full-matrices --output experiments/results/whole_body_diagnostics.json
+```
+
+These diagnostics do not establish a functioning IK/QP or stable whole-body locomotion controller.

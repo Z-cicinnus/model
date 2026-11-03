@@ -139,3 +139,14 @@ python scripts/run_simulation.py --model models/centaur/centaur.xml --steps 500
 - 当前控制增益仅用于研究起点，未经实机标定，不可直接作为硬件安全参数。
 
 本仓库的当前重点是：**优先完成整机模型验证和 PD / 全身逆运动学基线，再逐步研究 WBC、MPC、PPO 及模型—学习融合控制。**
+
+## 8. 文件来源校核与整机诊断
+
+根据已有 AS2-W 与 R1-A7 工程压缩包，新增[来源文件及历史验证核查说明](docs/source_verification_zh.md)，并提供本地文件包校验和整机动力学诊断脚本。
+
+```bash
+python scripts/check_source_packages.py --as2w-zip /path/to/AS2W_control_project.zip --r1a7-zip /path/to/R1_A7_MuJoCo.zip
+python scripts/whole_body_diagnostics.py --model models/centaur/centaur.xml --full-matrices --output experiments/results/whole_body_diagnostics.json
+```
+
+第二条命令需要先恢复 STL 并成功编译整机 XML。历史 AS2-W 代理模型的移动结果与 R1-A7 固定基运动学检查，不能当作半人马整机稳定移动验证。
