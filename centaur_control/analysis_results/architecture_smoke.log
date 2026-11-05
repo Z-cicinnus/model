@@ -1,0 +1,38 @@
+{"completed": 10, "total": 56, "height_m": 0.24812573633165474, "elapsed_s": 3.3755225999921095, "current_maxima_deg": {"pitch_positive": 11.58203125, "pitch_negative": 13.201660156250002, "roll_positive": 17.808105468750007, "roll_negative": 18.151855468750004}}
+{"completed": 20, "total": 56, "height_m": 0.2981257363316548, "elapsed_s": 8.838468599991756, "current_maxima_deg": {"pitch_positive": 23.818359375000004, "pitch_negative": 37.53710937500001, "roll_positive": 17.808105468750007, "roll_negative": 18.151855468750004}}
+{"completed": 30, "total": 56, "height_m": 0.34812573633165483, "elapsed_s": 15.916598700001487, "current_maxima_deg": {"pitch_positive": 36.58447265625001, "pitch_negative": 43.826171875, "roll_positive": 17.808105468750007, "roll_negative": 18.151855468750004}}
+{"completed": 40, "total": 56, "height_m": 0.3981257363316549, "elapsed_s": 21.771936000004644, "current_maxima_deg": {"pitch_positive": 37.18896484375, "pitch_negative": 43.826171875, "roll_positive": 17.808105468750007, "roll_negative": 18.151855468750004}}
+{"completed": 50, "total": 56, "height_m": 0.4481257363316549, "elapsed_s": 25.85447849999764, "current_maxima_deg": {"pitch_positive": 37.18896484375, "pitch_negative": 43.826171875, "roll_positive": 17.808105468750007, "roll_negative": 18.151855468750004}}
+{"completed": 56, "total": 56, "height_m": 0.47332690820665474, "elapsed_s": 27.066838600003393, "current_maxima_deg": {"pitch_positive": 37.18896484375, "pitch_negative": 43.826171875, "roll_positive": 17.808105468750007, "roll_negative": 18.151855468750004}}
+方向峰值： {
+  "pitch_positive": {
+    "direction": "pitch_positive",
+    "label": "前倾",
+    "height_m": 0.35212573633165484,
+    "angle_deg": 37.56689453125001,
+    "signed_angle_deg": 37.56689453125001
+  },
+  "pitch_negative": {
+    "direction": "pitch_negative",
+    "label": "后倾",
+    "height_m": 0.3051257363316548,
+    "angle_deg": 44.50683593749999,
+    "signed_angle_deg": -44.50683593749999
+  },
+  "roll_positive": {
+    "direction": "roll_positive",
+    "label": "右倾",
+    "height_m": 0.23412573633165473,
+    "angle_deg": 17.89404296875,
+    "signed_angle_deg": 17.89404296875
+  },
+  "roll_negative": {
+    "direction": "roll_negative",
+    "label": "左倾",
+    "height_m": 0.23412573633165473,
+    "angle_deg": 18.2392578125,
+    "signed_angle_deg": -18.2392578125
+  }
+}
+总体最大： {"direction": "pitch_negative", "label": "后倾", "height_m": 0.3051257363316548, "angle_deg": 44.50683593749999, "signed_angle_deg": -44.50683593749999}
+报告：C:\Users\16389\Desktop\Wheel_Centaur\centaur_control\analysis_results\height_tilt_scan_report.md

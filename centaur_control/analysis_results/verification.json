@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "site_jacobian_max_error": 3.2181618703219783e-07,
+  "contact_jacobian_max_error": 3.301591171567253e-07,
+  "dynamics_residual_max": 1.071489919013402e-07,
+  "contact_geometry_max_error_m": 1.6653345369377348e-16,
+  "ik_position_error_m": 0.0001603403937044828,
+  "baselines": {
+    "free": {
+      "status": "恢复",
+      "maximum_xy_displacement_m": 0.008299111365330491,
+      "max_abs_roll_pitch_deg": [
+        0.006484222334040229,
+        3.460226973069732
+      ]
+    },
+    "active": {
+      "status": "恢复",
+      "maximum_xy_displacement_m": 0.06455743479691017,
+      "max_abs_roll_pitch_deg": [
+        0.004474092963662208,
+        2.7156840579624233
+      ]
+    }
+  }
+}

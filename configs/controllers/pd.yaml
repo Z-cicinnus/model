@@ -1,3 +1,0 @@
-# Illustrative baseline gains only; NOT verified for the integrated robot.
-default_kp: 15.0
-default_kd: 1.0

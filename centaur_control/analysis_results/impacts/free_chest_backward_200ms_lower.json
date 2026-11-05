@@ -1,0 +1,64 @@
+{
+  "mode": "free",
+  "point": "chest",
+  "body": "waist_yaw_link",
+  "direction": "backward",
+  "duration_s": 0.2,
+  "peak_force_N": 225.0,
+  "observation_after_pulse_s": 5.0,
+  "initial_force_height_m": 0.6791862987094895,
+  "analytic_impulse_Ns": 28.64788975654116,
+  "numerical_impulse_Ns": 28.645533523292215,
+  "max_abs_roll_pitch_deg": [
+    0.030910119984998992,
+    9.468195576608505
+  ],
+  "peak_ground_moment_xyz_Nm": [
+    0.0,
+    152.06479181747295,
+    0.016900200486659613
+  ],
+  "peak_com_moment_xyz_Nm": [
+    0.0,
+    48.28509042638261,
+    0.021027256900622755
+  ],
+  "angular_impulse_ground_xyz_Nms": [
+    0.0,
+    -19.336786499509635,
+    -0.002167968101236249
+  ],
+  "min_wheels": 2,
+  "first_lift": {
+    "time_s": 0.09,
+    "roll_pitch_deg": [
+      0.005363683912711936,
+      -3.1793041198793963
+    ],
+    "wheels": 2,
+    "other_floor_bodies": []
+  },
+  "first_ground_contact": null,
+  "fall": false,
+  "fall_event": null,
+  "numerical_failure": false,
+  "maximum_xy_displacement_m": 0.4072285305780089,
+  "torque_saturated_steps": 0,
+  "final_roll_pitch_deg": [
+    0.006067040784646142,
+    -3.8386752210431876
+  ],
+  "final_velocity_m_s": [
+    -0.00015633068660563738,
+    -1.0032745531429785e-07,
+    -0.00045825841065625934
+  ],
+  "final_base_position_m": [
+    -0.43220541732020185,
+    -1.914792063934437e-05,
+    0.4284005121256248
+  ],
+  "final_other_floor_bodies": [],
+  "recovered": true,
+  "status": "恢复"
+}

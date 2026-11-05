@@ -1,0 +1,23 @@
+<mujoco model="AS2W_R1A7_O6 scene">
+  <include file="centaur_unified.xml"/>
+
+  <statistic center="0 0 0.5" extent="0.9"/>
+
+  <visual>
+    <global azimuth="120" elevation="-20"/>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+    <geom name="groundplane_visual" type="plane" pos="0 0 0.002" size="0 0 0.05" material="groundplane" contype="0" conaffinity="0"/>
+    <camera name="front" pos="2.0 -2.0 1.2" xyaxes="0.7071 0.7071 0 -0.4082 0.4082 0.8165"/>
+    <camera name="side" pos="0 -2.6 1.1" xyaxes="1 0 0 0 0.4 0.9165"/>
+  </worldbody>
+</mujoco>

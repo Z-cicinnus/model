@@ -1,0 +1,60 @@
+{"completed": 10, "total": 272, "height_m": 0.2121257363316547, "elapsed_s": 0.7582521000003908, "current_maxima_deg": {"pitch_positive": 2.4047851562500004, "pitch_negative": 2.46533203125, "roll_positive": 3.841796875000001, "roll_negative": 3.841796875000001}}
+{"completed": 20, "total": 272, "height_m": 0.22212573633165472, "elapsed_s": 2.1592598000133876, "current_maxima_deg": {"pitch_positive": 5.01611328125, "pitch_negative": 5.288574218749999, "roll_positive": 5.2998046875, "roll_negative": 5.2998046875}}
+{"completed": 30, "total": 272, "height_m": 0.23212573633165473, "elapsed_s": 4.035813000009512, "current_maxima_deg": {"pitch_positive": 7.574218750000002, "pitch_negative": 8.218261718750002, "roll_positive": 15.9814453125, "roll_negative": 15.9814453125}}
+{"completed": 40, "total": 272, "height_m": 0.24212573633165474, "elapsed_s": 6.4863781000021845, "current_maxima_deg": {"pitch_positive": 10.089355468750002, "pitch_negative": 11.282714843749998, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 50, "total": 272, "height_m": 0.25212573633165475, "elapsed_s": 9.420334400012507, "current_maxima_deg": {"pitch_positive": 12.571289062500002, "pitch_negative": 14.521484374999998, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 60, "total": 272, "height_m": 0.26212573633165476, "elapsed_s": 12.412297800008673, "current_maxima_deg": {"pitch_positive": 15.029296875, "pitch_negative": 17.99853515625, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 70, "total": 272, "height_m": 0.27212573633165477, "elapsed_s": 16.03867690000334, "current_maxima_deg": {"pitch_positive": 17.472167968750004, "pitch_negative": 21.82470703125, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 80, "total": 272, "height_m": 0.2821257363316548, "elapsed_s": 18.833820700005163, "current_maxima_deg": {"pitch_positive": 19.90869140625, "pitch_negative": 26.229492187500007, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 90, "total": 272, "height_m": 0.2921257363316548, "elapsed_s": 21.41752470000938, "current_maxima_deg": {"pitch_positive": 22.349121093750004, "pitch_negative": 31.89111328125, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 100, "total": 272, "height_m": 0.3021257363316548, "elapsed_s": 24.218513300002087, "current_maxima_deg": {"pitch_positive": 24.8017578125, "pitch_negative": 43.57421875, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 110, "total": 272, "height_m": 0.3121257363316548, "elapsed_s": 27.528810300005716, "current_maxima_deg": {"pitch_positive": 27.2783203125, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 120, "total": 272, "height_m": 0.3221257363316548, "elapsed_s": 30.646418800009997, "current_maxima_deg": {"pitch_positive": 29.789550781249996, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 130, "total": 272, "height_m": 0.3321257363316548, "elapsed_s": 33.81308400000853, "current_maxima_deg": {"pitch_positive": 32.34863281250001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 140, "total": 272, "height_m": 0.34212573633165483, "elapsed_s": 36.67818070000794, "current_maxima_deg": {"pitch_positive": 34.97216796875001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 150, "total": 272, "height_m": 0.35212573633165484, "elapsed_s": 39.99757590000809, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 160, "total": 272, "height_m": 0.36212573633165485, "elapsed_s": 42.94641530000081, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 170, "total": 272, "height_m": 0.37212573633165485, "elapsed_s": 45.682597100007115, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 180, "total": 272, "height_m": 0.38212573633165486, "elapsed_s": 48.28461380000226, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 190, "total": 272, "height_m": 0.3921257363316549, "elapsed_s": 50.944003900003736, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 200, "total": 272, "height_m": 0.4021257363316549, "elapsed_s": 53.21740480000153, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 210, "total": 272, "height_m": 0.4121257363316549, "elapsed_s": 55.41173780000827, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 220, "total": 272, "height_m": 0.4221257363316549, "elapsed_s": 57.28244750000886, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 230, "total": 272, "height_m": 0.4321257363316549, "elapsed_s": 59.060782900007325, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 240, "total": 272, "height_m": 0.4421257363316549, "elapsed_s": 61.0344335000118, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 250, "total": 272, "height_m": 0.4521257363316549, "elapsed_s": 63.42609750000702, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 260, "total": 272, "height_m": 0.46212573633165493, "elapsed_s": 65.30006400001002, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 270, "total": 272, "height_m": 0.47212573633165494, "elapsed_s": 66.4992682000011, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+{"completed": 272, "total": 272, "height_m": 0.47332690820665474, "elapsed_s": 66.61065820000658, "current_maxima_deg": {"pitch_positive": 37.56689453125001, "pitch_negative": 44.50683593749999, "roll_positive": 17.89404296875, "roll_negative": 18.2392578125}}
+方向峰值： {
+  "pitch_positive": {
+    "direction": "pitch_positive",
+    "label": "前倾",
+    "height_m": 0.35192573633165486,
+    "angle_deg": 37.62353515625,
+    "signed_angle_deg": 37.62353515625
+  },
+  "pitch_negative": {
+    "direction": "pitch_negative",
+    "label": "后倾",
+    "height_m": 0.3048257363316548,
+    "angle_deg": 44.587890625,
+    "signed_angle_deg": -44.587890625
+  },
+  "roll_positive": {
+    "direction": "roll_positive",
+    "label": "右倾",
+    "height_m": 0.23382573633165474,
+    "angle_deg": 17.900878906249996,
+    "signed_angle_deg": 17.900878906249996
+  },
+  "roll_negative": {
+    "direction": "roll_negative",
+    "label": "左倾",
+    "height_m": 0.23412573633165473,
+    "angle_deg": 18.2392578125,
+    "signed_angle_deg": -18.2392578125
+  }
+}
+总体最大： {"direction": "pitch_negative", "label": "后倾", "height_m": 0.3048257363316548, "angle_deg": 44.587890625, "signed_angle_deg": -44.587890625}
+报告：C:\Users\16389\Desktop\Wheel_Centaur\centaur_control\analysis_results\height_tilt_scan_report.md

@@ -1,0 +1,91 @@
+{
+  "mode": "free",
+  "point": "base",
+  "body": "base_link",
+  "direction": "forward",
+  "duration_s": 0.2,
+  "peak_force_N": 1550.0,
+  "observation_after_pulse_s": 5.0,
+  "initial_force_height_m": 0.45462620405346255,
+  "analytic_impulse_Ns": 197.3521294339502,
+  "numerical_impulse_Ns": 197.3358976049019,
+  "max_abs_roll_pitch_deg": [
+    179.99880867527972,
+    89.98393449868654
+  ],
+  "peak_ground_moment_xyz_Nm": [
+    0.0,
+    724.2063501082097,
+    1.1545672228451493
+  ],
+  "peak_com_moment_xyz_Nm": [
+    0.0,
+    9.565026512391931,
+    0.9274203637429043
+  ],
+  "angular_impulse_ground_xyz_Nms": [
+    0.0,
+    92.38348810725914,
+    0.14521048767695494
+  ],
+  "min_wheels": 0,
+  "first_lift": {
+    "time_s": 0.11800000000000001,
+    "roll_pitch_deg": [
+      -0.00034440195540364296,
+      -1.0589633883891334
+    ],
+    "wheels": 2,
+    "other_floor_bodies": []
+  },
+  "first_ground_contact": {
+    "time_s": 1.164,
+    "roll_pitch_deg": [
+      -0.23658046133947694,
+      85.70630576261999
+    ],
+    "wheels": 1,
+    "other_floor_bodies": [
+      "rh_middle_distal"
+    ]
+  },
+  "fall": true,
+  "fall_event": {
+    "time_s": 1.158,
+    "roll_pitch_deg": [
+      -0.18380246834275293,
+      84.11559645131106
+    ],
+    "wheels": 0,
+    "other_floor_bodies": []
+  },
+  "numerical_failure": false,
+  "maximum_xy_displacement_m": 3.5170857802956315,
+  "torque_saturated_steps": 8,
+  "final_roll_pitch_deg": [
+    173.22617517123612,
+    52.70151347570384
+  ],
+  "final_velocity_m_s": [
+    -0.001849350505487828,
+    -0.034510672265327585,
+    -0.0017048994591638035
+  ],
+  "final_base_position_m": [
+    3.2728389011752963,
+    0.02373310404059749,
+    0.34146556194766775
+  ],
+  "final_other_floor_bodies": [
+    "base_link",
+    "head_yaw_link",
+    "lh_index_distal",
+    "lh_middle_distal",
+    "rh_index_distal",
+    "rh_index_proximal",
+    "rh_middle_distal",
+    "rh_thumb_distal"
+  ],
+  "recovered": false,
+  "status": "倒地失效"
+}

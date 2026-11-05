@@ -1,0 +1,12 @@
+{
+  "completed": 56,
+  "total": 56,
+  "height_m": 0.47332690820665474,
+  "elapsed_s": 27.066838600003393,
+  "current_maxima_deg": {
+    "pitch_positive": 37.18896484375,
+    "pitch_negative": 43.826171875,
+    "roll_positive": 17.808105468750007,
+    "roll_negative": 18.151855468750004
+  }
+}

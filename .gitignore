@@ -1,33 +1,10 @@
-# Generated Python files
 __pycache__/
-*.py[cod]
+*.pyc
 .pytest_cache/
-.ruff_cache/
-.mypy_cache/
 .venv/
-venv/
-*.egg-info/
-build/
-dist/
-# Local original robot assets and private archives; see docs/asset_provenance.md
-models/as2_w/meshes/
-models/r1_a7/meshes/
-models/as2_w/as2_w.urdf
-models/r1_a7/r1_a7.urdf
-*.zip
-# Simulation results, datasets, recordings and checkpoints
-experiments/results/*
-!experiments/results/README.md
-*.mp4
+# Binary files are restored locally from source ZIP
+*.stl
+*.STL
+*.obj
 *.npz
-*.pt
-*.pth
-*.ckpt
-runs/
-logs/
-
-# Locally restored geometry/data from full user-provided model ZIPs
-research/centaur_complete/meshes/
-research/centaur_complete/source/*.urdf
-models/r1_a7_o6/meshes/
-models/r1_a7_o6/hand/meshes/
+*.png

@@ -1,5 +1,0 @@
-mujoco==3.3.7
-numpy>=1.26
-# Only needed to regenerate convex meshes:
-trimesh==5.2.0
-coacd==1.0.14

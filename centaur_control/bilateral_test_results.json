@@ -1,0 +1,32 @@
+{
+  "task": "双手对称伸展并回收，4 秒，2 ms 步长",
+  "steps": 2000,
+  "actuated_joints_pd_controlled": 45,
+  "initial_wheels_in_contact": 4,
+  "static_pd_baseline_2s": {
+    "maximum_base_tilt_rad": 0.014480758131053047,
+    "maximum_xy_drift_m": 0.037489649432182026,
+    "minimum_wheels_in_contact": 4
+  },
+  "minimum_wheels_in_contact_during_task": 4,
+  "maximum_base_tilt_rad": 0.023044120038025834,
+  "hand_position_rmse_m": 0.03647222156384382,
+  "final_base_position_world_m": [
+    -0.03385067584558248,
+    -9.083947767754407e-06,
+    0.43926470198225775
+  ],
+  "final_hand_positions_world_m": [
+    [
+      0.38651220614648973,
+      0.14332094127107975,
+      0.5467196220444155
+    ],
+    [
+      0.3867616832758298,
+      -0.143073168404285,
+      0.5453909483689985
+    ]
+  ],
+  "result": "通过：静止 PD 基线和双臂 IK-QP 任务均完成，四轮持续接触"
+}

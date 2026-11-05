@@ -1,0 +1,92 @@
+{
+  "mode": "free",
+  "point": "chest",
+  "body": "waist_yaw_link",
+  "direction": "forward",
+  "duration_s": 0.2,
+  "peak_force_N": 800.0,
+  "observation_after_pulse_s": 5.0,
+  "initial_force_height_m": 0.6791862987094895,
+  "analytic_impulse_Ns": 101.85916357881302,
+  "numerical_impulse_Ns": 101.85078586059447,
+  "max_abs_roll_pitch_deg": [
+    179.99169760513558,
+    89.81950230334859
+  ],
+  "peak_ground_moment_xyz_Nm": [
+    0.0,
+    552.8361833708547,
+    0.06463955171199591
+  ],
+  "peak_com_moment_xyz_Nm": [
+    0.0,
+    176.47937344093128,
+    0.08353949784681003
+  ],
+  "angular_impulse_ground_xyz_Nms": [
+    0.0,
+    70.73164707105401,
+    0.008081336275604962
+  ],
+  "min_wheels": 0,
+  "first_lift": {
+    "time_s": 0.08600000000000001,
+    "roll_pitch_deg": [
+      0.005131246891092783,
+      -0.3411834976447777
+    ],
+    "wheels": 2,
+    "other_floor_bodies": []
+  },
+  "first_ground_contact": {
+    "time_s": 1.042,
+    "roll_pitch_deg": [
+      -0.1331685098664093,
+      85.81754707402489
+    ],
+    "wheels": 2,
+    "other_floor_bodies": [
+      "lh_middle_distal",
+      "lh_ring_distal",
+      "rh_middle_distal",
+      "rh_ring_distal"
+    ]
+  },
+  "fall": true,
+  "fall_event": {
+    "time_s": 1.026,
+    "roll_pitch_deg": [
+      -0.06845537874856224,
+      81.88689379029367
+    ],
+    "wheels": 2,
+    "other_floor_bodies": []
+  },
+  "numerical_failure": false,
+  "maximum_xy_displacement_m": 2.0219133269916787,
+  "torque_saturated_steps": 0,
+  "final_roll_pitch_deg": [
+    132.31621378480577,
+    38.01478393728029
+  ],
+  "final_velocity_m_s": [
+    0.07011538913879896,
+    -0.5137621608229327,
+    -0.1802701387177854
+  ],
+  "final_base_position_m": [
+    1.972914078119576,
+    -0.22750933904581103,
+    0.3070541704229733
+  ],
+  "final_other_floor_bodies": [
+    "head_yaw_link",
+    "rh_hand_base_link",
+    "rh_index_distal",
+    "rh_index_proximal",
+    "rh_middle_distal",
+    "rh_middle_proximal"
+  ],
+  "recovered": false,
+  "status": "倒地失效"
+}

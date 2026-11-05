@@ -1,8 +1,0 @@
-name: centaur
-model: models/centaur/centaur.xml
-platforms:
-  base: as2_w
-  upper_body: r1_a7
-actuator_mapping: query_by_name
-floating_base: true
-simulation_timestep_s: 0.001

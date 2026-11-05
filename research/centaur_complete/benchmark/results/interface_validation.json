@@ -1,9 +1,0 @@
-{
-  "passed": true,
-  "determinism": "two resets, 10 identical zero-action steps, bitwise identical observations and rewards",
-  "observation_size": 101,
-  "action_size": 33,
-  "invalid_action_rejected": true,
-  "action_clipping_verified": true,
-  "task_start_and_terminal_translation_checked": true
-}
