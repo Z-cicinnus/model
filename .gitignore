@@ -1,10 +1,19 @@
 __pycache__/
-*.pyc
+*.py[cod]
 .pytest_cache/
 .venv/
-# Binary files are restored locally from source ZIP
+venv/
+.env
+*.egg-info/
+# MuJoCo runs are large and should not be confused with frozen verification records
+comparison_*/
+preview_*/
+foundation_results/
+experiments/results/
+update_packages/
+*.mp4
+# Source model meshes may require independent redistribution permission
 *.stl
 *.STL
 *.obj
-*.npz
-*.png
+*.OBJ

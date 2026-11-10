@@ -1,0 +1,253 @@
+{
+  "version": "foundation-v5.0",
+  "physics_hz": 100,
+  "control_hz": 100,
+  "angle_deg": 5,
+  "lift_m": 0.02,
+  "height": null,
+  "discard_initial_s": 4,
+  "duration_s": {
+    "move": 54,
+    "posture": 54,
+    "upper": 72
+  },
+  "pulse": {
+    "start_s": 10,
+    "duration_s": 0.5,
+    "body": "base_link",
+    "frame": "world",
+    "point": "body COM"
+  },
+  "thresholds": {
+    "height_rmse_m": 0.01,
+    "roll_rmse_deg": 1,
+    "pitch_rmse_deg": 1,
+    "speed_rmse_mps": 0.05,
+    "yaw_rate_rmse_radps": 0.03,
+    "upper_joint_rmse_rad": 0.1,
+    "peak_attitude_error_deg": 5,
+    "max_low_load_run_s": 0.1,
+    "wheel_load_threshold_N": 1,
+    "max_saturation_run_s": 0.2,
+    "saturation_fraction": 0.99,
+    "recovery_angle_deg": 0.5,
+    "recovery_height_m": 0.005,
+    "recovery_speed_mps": 0.02,
+    "recovery_yaw_radps": 0.02,
+    "recovery_xy_m": 0.02,
+    "recovery_hold_s": 1,
+    "recovery_deadline_s": 3
+  },
+  "cases": [
+    {
+      "id": "move_nominal",
+      "task": "move",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_nominal",
+      "task": "posture",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "upper_nominal",
+      "task": "upper",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_40N_xm",
+      "task": "move",
+      "force": [
+        -40,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_40N_xp",
+      "task": "move",
+      "force": [
+        40,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_40N_ym",
+      "task": "move",
+      "force": [
+        0,
+        -40,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_40N_yp",
+      "task": "move",
+      "force": [
+        0,
+        40,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_120N_xm",
+      "task": "move",
+      "force": [
+        -120,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_120N_xp",
+      "task": "move",
+      "force": [
+        120,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_120N_ym",
+      "task": "move",
+      "force": [
+        0,
+        -120,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "move_120N_yp",
+      "task": "move",
+      "force": [
+        0,
+        120,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_40N_xm",
+      "task": "posture",
+      "force": [
+        -40,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_40N_xp",
+      "task": "posture",
+      "force": [
+        40,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_40N_ym",
+      "task": "posture",
+      "force": [
+        0,
+        -40,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_40N_yp",
+      "task": "posture",
+      "force": [
+        0,
+        40,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_120N_xm",
+      "task": "posture",
+      "force": [
+        -120,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_120N_xp",
+      "task": "posture",
+      "force": [
+        120,
+        0,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_120N_ym",
+      "task": "posture",
+      "force": [
+        0,
+        -120,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "posture_120N_yp",
+      "task": "posture",
+      "force": [
+        0,
+        120,
+        0
+      ],
+      "arm": "both"
+    },
+    {
+      "id": "upper_left",
+      "task": "upper",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "arm": "left"
+    },
+    {
+      "id": "upper_right",
+      "task": "upper",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "arm": "right"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Source code and reports
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.xml text eol=lf
+# Git-sharded original ZIP bytes
+archives/packages/**/*.bin binary

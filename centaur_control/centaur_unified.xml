@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mujoco model="AS2W_R1A7_O6_unified">
   <compiler angle="radian" autolimits="true" meshdir="../" />
-  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" />
+  <option timestep="0.01" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" />
   <size njmax="3000" nconmax="1000" />
   <default>
     <joint damping="0.05" armature="0.01" frictionloss="0.2" />
